@@ -1,0 +1,655 @@
+MovieName: Alien 
+Director: Ridley Scott
+Year: 1979
+Rating: 8.5
+Genre: Sci-Fi
+Actors: Tom Skerritt | 	Sigourney Weaver | Veronica Cartwright | Harry Dean Stanton | John Hurt
+Synopsis: In deep space, the crew of the commercial starship Nostromo is awakened from their cryo-sleep capsules halfway through their journey home to investigate a distress call from an alien vessel. The terror begins when the crew encounters a nest of eggs inside the alien ship. An organism from inside an egg leaps out and attaches itself to one of the crew, causing him to fall into a coma.
+
+MovieName: Aliens 
+Director: James Cameron
+Year: 1986
+Rating: 8.4
+Genre: Sci-Fi
+Actors: Sigourney Weaver | Carrie Henn | Michael Biehn | Paul Reiser | 	Lance Henriksen
+Synopsis: After floating in space for 57 years, Lt. Ripley's shuttle is found by a deep space salvage team. Upon arriving at LV-426, the marines find only one survivor, a nine year old girl named Newt. But even these battle-hardened marines with all the latest weaponry are no match for the hundreds of aliens that have invaded the colony.
+
+MovieName: Alien 3
+Director: David Fincher
+Year: 1992
+Rating: 6.4
+Genre: Sci-Fi
+Actors: Sigourney Weaver | Charles S. Dutton | Charles Dance | Paul McGann | Brian Glover
+Synopsis: Ellen Ripley is the only survivor when she crash lands on Fiorina 161, a bleak wasteland inhabited by former inmates of the planet's maximum security prison. Once again, Ripley must face skepticism and the alien as it hunts down the prisoners and guards. Without weapons or modern technology of any kind, Ripley leads the men into battle against the terrifying creature.
+
+MovieName: Alien: Resurrection
+Director: Jean-Pierre Jeunet
+Year: 1997
+Rating: 6.2
+Genre: Sci-Fi
+Actors: Sigourney Weaver | Winona Ryder | Dominique Pinon | Ron Perlman | Gary Dourdan
+Synopsis: The saga continues 200 years after Ripley sacrificed herself for the sake of humanity. Her erstwhile employers long gone, this time it is the military that resurrects the one-woman killing machine through genetic cloning to extract the alien from within her, but during the process her DNA is fused with the queen and then the aliens escape. Now Ripley must decide where her allegiance lies.
+
+MovieName: Alien: Covenant
+Director: Ridley Scott
+Year: 2017
+Rating: 6.4
+Genre: Sci-Fi
+Actors: Michael Fassbender | Katherine Waterston | Billy Crudup | Danny McBride | Demián Bichir
+Synopsis: Bound for a remote planet on the far side of the galaxy, members of the colony ship Covenant discover what they think to be an uncharted paradise. While there, they meet David, the synthetic survivor of the doomed Prometheus expedition. The mysterious world soon turns dark and dangerous when a hostile alien life-form forces the crew into a deadly fight for survival.
+
+MovieName: Death Stranding
+Director: Hideo Kojima
+Year: 2019
+Rating: 8.8
+Genre: Adventure
+Actors: Sam Porter Bridges | Cliff Unger | Fragile | Higgs Monaghan | Mama
+Synopsis: In the future, a mysterious event known as the Death Stranding has opened a doorway between the living and the dead, leading to grotesque creatures from the afterlife roaming the fallen world marred by a desolate society.
+
+MovieName: The Fast and the Furious
+Director: Rob Cohen
+Year: 2001
+Rating: 6.8
+Genre: Action
+Actors: Paul Walker | Vin Diesel | Michelle Rodriguez | Jordana Brewster | Rick Yune
+Synopsis: Dominic Toretto enjoys the adrenaline of street car racing and his fans treat him like a rock star. After a blazing encounter with the ruthless Johnny Tran, Dom decides to take Brian, a newcomer to street racing, under his wing. Dom's sister Mia sees something she likes in Brian, too. Trouble is, neither of them realize he's an undercover cop, and Dominic and his rival Johnny Tran are both the prime suspects in a case involving dirty money and big-rig hijacking.
+
+MovieName: 2 Fast 2 Furious
+Director: John Singleton
+Year: 2003
+Rating: 5.9
+Genre: Action
+Actors: Paul Walker | Tyrese Gibson | Eva Mendes | Cole Hauser | Ludacris
+Synopsis: This sequel focuses on ex-police officer Brian O'Conner, who relocates from Los Angeles to Miami to start over. Becoming involved in the street-racing scene in his new city, Brian befriends car-savvy Tej and Suki, but his competitive streak ends when federal agents apprehend him and he must enter into a deal with the FBI. Working with new partner Roman Pearce, Brian begins a dangerous mission to take down a powerful drug dealer.
+
+MovieName: The Fast and the Furious: Tokyo Drift
+Director: Justin Lin
+Year: 2006
+Rating: 6.0
+Genre: Action
+Actors: Lucas Black | Damien Marzette | Trula M. Marcus | Zachery Ty Bryan | Brandon Brendel
+Synopsis: Sean Boswell always feels like an outsider, but he defines himself through his victories as a street racer. His hobby makes him unpopular with the authorities, so he goes to live with his father in Japan. Once there and even more alienated, he learns about an exciting, but dangerous, new style of the sport. The stakes are high when Sean takes on the local champion and falls for the man's girlfriend.
+
+MovieName: Fast & Furious
+Director: Justin Lin
+Year: 2009
+Rating: 6.5
+Genre: Action
+Actors: Vin Diesel | Paul Walker | Jordana Brewster | Michelle Rodriguez | Gal Gadot
+Synopsis: Dominic Toretto is forced to come out of hiding when a loved one is brutally murdered. Heading to LA to track down the culprit, he crosses paths with Brian O'Connor, the FBI agent whose undercover infiltration of Toretto's gang led to the motorised miscreant's exile across the border. The two men temporarily put their differences aside as they investigate the killing.
+
+MovieName: Fast Five
+Director: Justin Lin
+Year: 2011
+Rating: 7.3
+Genre: Action
+Actors: Vin Diesel | Paul Walker | Sung Kang | Michelle Rodriguez | Gal Gadot
+Synopsis: Ever since ex-cop Brian O'Conner and Mia Torretto broke her brother Dom out of custody, they've traveled border to border to evade authorities. In Rio de Janeiro, they must do one final job before they can gain their freedom for good. Assembling their elite team of car racers, Brian and Dom know they must confront the corrupt businessman who wants them dead, before the federal agent on their trail finds them.
+
+MovieName: Fast & Furious 6
+Director: Justin Lin
+Year: 2013
+Rating: 7.0
+Genre: Action
+Actors: Vin Diesel | Paul Walker | Dwayne Johnson | Tyrese Gibson | Ludacris
+Synopsis: Since Dom and Brian's heist in Rio left them and their crew very rich people, they've scattered across the globe; however, they must still live as fugitives, unable to return home to their families. Meanwhile, Agent Hobbs has been tracking a gang of lethally skilled mercenary drivers whose second-in-command is someone Dom knows. Unable to take them down himself, Hobbs asks Dom and his crew for help in exchange for full pardons for everyone.
+
+MovieName: Furious 7
+Director: James Wan
+Year: 2015
+Rating: 7.1
+Genre: Action
+Actors: Vin Diesel | Paul Walker | Dwayne Johnson | Tyrese Gibson | Ludacris
+Synopsis: After defeating international terrorist Owen Shaw, Dominic Toretto, Brian O'Conner and the rest of the crew have separated to return to more normal lives. However, Deckard Shaw, Owen's older brother, is thirsty for revenge. A slick government agent offers to help Dom and company take care of Shaw in exchange for their help in rescuing a kidnapped computer hacker who has developed a powerful surveillance program.
+
+MovieName: The Fate of the Furious
+Director: F. Gary Gray
+Year: 2017
+Rating: 6.6
+Genre: Action
+Actors: Vin Diesel | Jason Statham | Dwayne Johnson | Tyrese Gibson | Ludacris
+Synopsis: With Dom and Letty married, Brian and Mia retired and the rest of the crew exonerated, the globe-trotting team has found some semblance of a normal life. They soon face an unexpected challenge when a mysterious woman named Cipher forces Dom to betray them all. Now, they must unite to bring home the man who made them a family and stop Cipher from unleashing chaos.
+
+MovieName: F9: The Fast Saga
+Director: Justin Lin
+Year: 2021
+Rating: 5.2
+Genre: Action
+Actors: Vin Diesel | Michelle Rodriguez | Dwayne Johnson | John Cena | Ludacris
+Synopsis: Dom Toretto is living the quiet life off the grid with Letty and his son, but they know that danger always lurks just over the peaceful horizon. This time, that threat forces Dom to confront the sins of his past to save those he loves most. His crew soon comes together to stop a world-shattering plot by the most skilled assassin and high-performance driver they've ever encountered -- Dom's forsaken brother.
+
+MovieName: The Witcher 3: Wild Hunt
+Director: Konrad Tomaszkiewicz
+Year: 2015 
+Rating: 9.7
+Genre: Fantasy
+Actors: Geralt | Triss | Yennefer | Dandelion | Cirilla
+Synopsis: A monster hunter for hire embarks on an epic journey to find his former apprentice before The Wild Hunt can capture her and bring about the destruction of the world.
+
+MovieName: Casino Royale
+Director: Martin Campbell
+Year: 2006
+Rating: 8.0
+Genre: Action
+Actors: Daniel Craig | Eva Green | Mads Mikkelsen | Judi Dench | Jeffrey Wright
+Synopsis: After receiving a license to kill, British Secret Service agent James Bond heads to Madagascar, where he uncovers a link to Le Chiffre, a man who finances terrorist organizations. Learning that Le Chiffre plans to raise money in a high-stakes poker game, MI6 sends Bond to play against him, gambling that their newest "00" operative will topple the man's organization.
+
+MovieName: Quantum fo Solace
+Director: Marc Forster
+Year: 2008
+Rating: Action
+Genre: 6.6
+Actors: Daniel Craig | Olga Kurylenko | Mathieu Amalric | Judi Dench | Giancarlo Giannini
+Synopsis: Following the death of Vesper Lynd, James Bond makes his next mission personal. The hunt for those who blackmailed his lover leads him to ruthless businessman Dominic Greene, a key player in the organization which coerced Vesper. Bond learns that Greene is plotting to gain total control of a vital natural resource, and he must navigate a minefield of danger and treachery to foil the plan.
+
+MovieName: Skyfall
+Director: Sam Mendes
+Year: 2012
+Rating: 7.8
+Genre: Action
+Actors: Daniel Craig | Judi Dench | Javier Bardem | Ralph Fiennes | Naomie Harris
+Synopsis: When James Bond's latest assignment goes terribly wrong, it leads to a calamitous turn of events: Undercover agents around the world are exposed, and MI6 is attacked, forcing M to relocate the agency. With MI6 now compromised inside and out, M turns to the one man she can trust: Bond. Aided only by a field agent, Bond takes to the shadows and follows a trail to Silva, a man from M's past who wants to settle an old score.
+
+MovieName: Spectre
+Director: Sam Mendes
+Year: 2015
+Rating: 6.8
+Genre: Action
+Actors: Daniel Craig | Christoph Waltz | Léa Seydoux | Ralph Fiennes | 	Monica Bellucci
+Synopsis: A cryptic message from the past leads James Bond to Mexico City and Rome, where he meets the beautiful widow of an infamous criminal. After infiltrating a secret meeting, 007 uncovers the existence of the sinister organization SPECTRE. Needing the help of the daughter of an old nemesis, he embarks on a mission to find her. As Bond ventures toward the heart of SPECTRE, he discovers a chilling connection between himself and the enemy he seeks.
+
+MovieName: No Time to Die
+Director: Cary Joji Fukunaga
+Year: 2021
+Rating: 7.3
+Genre: Action
+Actors: Daniel Craig | Léa Seydoux | Rami Malek | Lashana Lynch | Ralph Fiennes
+Synopsis: James Bond is enjoying a tranquil life in Jamaica after leaving active service. However, his peace is short-lived as his old CIA friend, Felix Leiter, shows up and asks for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond on the trail of a mysterious villain who's armed with a dangerous new technology.
+
+MovieName: Red Dead Redemption 2
+Director: Dan Houser
+Year: 2018
+Rating: 9.7
+Genre: Action
+Actors: Arthur Morgan | John Marston | Benjamin Byron Davis | Sadie Adler | Hosea Matthews
+Synopsis: Amidst the decline of the Wild West at the turn of the 20th century, outlaw Arthur Morgan and his gang struggle to cope with the loss of their way of life.
+
+MovieName: Halloween
+Director: John Carpenter
+Year: 1978
+Rating: 7.7
+Genre: Horror
+Actors: Donald Pleasence | Jamie Lee Curtis | Nancy Kyes | P.J. Soles | Charles Cyphers
+Synopsis: On a cold Halloween night in 1963, six year old Michael Myers brutally murdered his 17-year-old sister, Judith. He was sentenced and locked away for 15 years. But on October 30, 1978, while being transferred for a court date, a 21-year-old Michael Myers steals a car and escapes Smith's Grove. He returns to his quiet hometown of Haddonfield, Illinois, where he looks for his next victims.
+
+MovieName: Halloween
+Director: David Gordon Green
+Year: 2018
+Rating: 6.5
+Genre: Horror
+Actors: Jamie Lee Curtis | Judy Greer | Andi Matichak | James Jude Courtney | Nick Castle
+Synopsis: It's been 40 years since Laurie Strode survived a vicious attack from crazed killer Michael Myers on Halloween night. Locked up in an institution, Myers manages to escape when his bus transfer goes horribly wrong. Laurie now faces a terrifying showdown when the masked madman returns to Haddonfield, Ill. -- but this time, she's ready for him.
+
+MovieName: Halloween Kills
+Director: David Gordon Green
+Year: 2021
+Rating: 5.5
+Genre: Horror
+Actors: Jamie Lee Curtis | Judy Greer | Andi Matichak | James Jude Courtney | Nick Castle
+Synopsis: The nightmare isn't over as unstoppable killer Michael Myers escapes from Laurie Strode's trap to continue his ritual bloodbath. Injured and taken to the hospital, Laurie reunites with Tommy Doyle, the boy she was babysitting on the night Michael began his reign of terror. As Laurie continues to fight through the pain, Tommy leads an angry mob of vigilantes to rise up against Myers and destroy the evil once and for all.
+
+MovieName: Uncherted 4: A Thief's End
+Director: Neil Druckmann
+Year: 2016
+Rating: 9.5
+Genre: Adventure
+Actors: Nathan Drake | Samuel Drake | Victor Sullivan | Elena Fisher | Rafe Adler
+Synopsis: Thrown back into the dangerous underworld he'd tried to leave behind, Nathan Drake must decide what he's willing to sacrifice to save the ones he loves.
+
+MovieName: Pirates of the Caribbean: The Curse of the Black Pearl
+Director: Gore Verbinski
+Year: 2003
+Rating: 8.0
+Genre: Fantasy
+Actors: Johnny Depp | Geoffrey Rush | Orlando Bloom | Keira Knightley | Jack Davenport
+Synopsis: Capt. Jack Sparrow arrives at Port Royal in the Caribbean without a ship or crew. His timing is inopportune, however, because later that evening the town is besieged by a pirate ship. The pirates kidnap the governor's daughter, Elizabeth, who's in possession of a valuable coin that is linked to a curse that has transformed the pirates into the undead. A gallant blacksmith in love with Elizabeth allies with Sparrow in pursuit of the pirates.
+
+MovieName: Pirates of the Caribbean: Dead Man's Chest
+Director: Gore Verbinski
+Year: 2006
+Rating: 7.3
+Genre: Fantasy
+Actors: Johnny Depp | Bill Nighy | Orlando Bloom | Keira Knightley | Jack Davenport
+Synopsis: When ghostly pirate Davy Jones comes to collect a blood debt, Capt. Jack Sparrow must find a way to avoid his fate lest his soul be damned for all time. Nevertheless, the wily ghost manages to interrupt the wedding plans of Jack's friends Will Turner and Elizabeth Swann.
+
+MovieName: Pirates of the Caribbean: At World's End
+Director: Gore Verbinski
+Year: 2007
+Rating: Fantasy
+Genre: 7.1
+Actors: Johnny Depp | Bill Nighy | Orlando Bloom | Keira Knightley | Jack Davenport
+Synopsis: Will Turner and Elizabeth Swann join forces with Capt. Barbossa to free Jack Sparrow from Davy Jones' locker. Meanwhile, the crew of the Flying Dutchman ghost ship wreaks havoc on the Seven Seas. The friends must navigate dangerous waters to confront Chinese pirate Sao Feng and, ultimately, they must choose sides in a battle wherein the pirate life hangs in the balance.
+
+MovieName: Pirates of the Caribbean: On Stranger Tides
+Director: Rob Marshall
+Year: 2011
+Rating: 6.6
+Genre: Fantasy
+Actors: Johnny Depp | Penélope Cruz | Geoffrey Rush | Ian McShane | Kevin McNally
+Synopsis: The checkered past of Capt. Jack Sparrow catches up to him when he encounters Angelica, a beautiful pirate that Jack once loved then left. Angelica forces him to accompany her to the Queen Anne's Revenge, the ship of the notorious Blackbeard. Accompanied by a zombie crew, the trio sets sail to find the legendary Fountain of Youth. However, Jack's rival, Barbossa, also seeks the fountain, as does a ship from Spain.
+
+MovieName: Pirates of the Caribbean: Dead Men Tell No Tales
+Director: Joachim Rønning
+Year: 2017
+Rating: 6.5
+Genre: Fantasy
+Actors: Johnny Depp | Javier Bardem | Geoffrey Rush | Brenton Thwaites | Kaya Scodelario
+Synopsis: Thrust into an all-new adventure, a down-on-his-luck Capt. Jack Sparrow feels the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the evil Capt. Salazar, escape from the Devil's Triangle. Jack's only hope of survival lies in seeking out the legendary Trident of Poseidon, but to find it, he must forge an uneasy alliance with a brilliant and beautiful astronomer and a headstrong young man in the British navy.
+
+MovieName: STAR WARS Jedi: Fallen Order
+Director: Stig Asmussen
+Year: 2019
+Rating: 8.5
+Genre: Adventure
+Actors: Cal Kestis | Trilla Suduri  | Saw Gerrera | Darth Vader | Cere Junda
+Synopsis: Set shortly after Revenge of the Sith, the player takes on the role of a Jedi padawan being hunted by the Empire after Order 66.
+
+MovieName: Shrek
+Director: Andrew Adamson
+Year: 2001
+Rating: 7.9
+Genre: Animation
+Actors: Mike Myers | Eddie Murphy | Cameron Diaz | John Lithgow | Vincent Cassel
+Synopsis: Once upon a time, in a far away swamp, there lived an ogre named Shrek whose precious solitude is suddenly shattered by an invasion of annoying fairy tale characters. They were all banished from their kingdom by the evil Lord Farquaad. Determined to save their home -- not to mention his -- Shrek cuts a deal with Farquaad and sets out to rescue Princess Fiona to be Farquaad's bride. Rescuing the Princess may be small compared to her deep, dark secret.
+
+MovieName: Shrek 2
+Director: Andrew Adamson
+Year: 2004
+Rating: 7.3
+Genre: Animation
+Actors: Mike Myers | Eddie Murphy | Cameron Diaz | Julie Andrews | Antonio Banderas 
+Synopsis: After returning from their honeymoon and showing home movies to their friends, Shrek and Fiona learn that her parents have heard that she has married her true love and wish to invite him to their kingdom, called Far Far Away. The catch is: Fiona's parents are unaware of the curse that struck their daughter and have assumed she married Prince Charming, not a 700-pound ogre with horrible hygiene and a talking donkey pal.
+
+MovieName: Shrek the Third
+Director: Chris Miller 
+Year: 2007
+Rating: 6.1
+Genre: Animation
+Actors: Mike Myers | Eddie Murphy | Cameron Diaz | Antonio Banderas | Julie Andrews
+Synopsis: When King Harold suddenly croaks, Shrek learns he will have to rule the land of Far, Far Away, unless he can find a suitable heir to the throne. The most-promising candidate is Princess Fiona's cousin Artie, a teenage slacker in a medieval high-school. Shrek and his trusted companions, Donkey and Puss in Boots, set out to bring Artie back but find their mission is a bigger challenge than they expected.
+
+MovieName: Shrek Forever After 
+Director: Mike Mitchell
+Year: 2010
+Rating: 6.3 
+Genre: Animation
+Actors: Mike Myers | Eddie Murphy | Cameron Diaz | Antonio Banderas | Jon Hamm
+Synopsis: Long-settled into married life and fully domesticated, Shrek begins to long for the days when he felt like a real ogre. Duped into signing a contract with devious Rumpelstiltskin, he finds himself in an alternate version of Far Far Away, where ogres are hunted, Rumpelstiltskin rules, and he and Fiona have never met. Shrek must find a way out of the contract to restore his world and reclaim his true love.
+
+MovieName: Puss in Boots
+Director: Chris Miller
+Year: 2011
+Rating: 6.6 
+Genre: Animation
+Actors: Antonio Banderas | Salma Hayek | Zach Galifianakis | Billy Bob Thornton | Amy Sedaris
+Synopsis: Long before meeting Shrek, Puss in Boots -- just named a hero for saving a woman from a charging bull -- is run out of town on suspicion of bank robbery, even though the real villain is Puss' friend, Humpty Dumpty. Though there is still animosity between them, Puss and Humpty reunite to steal a goose that lays golden eggs. Joining them for the adventure of nine lifetimes is notorious cat burglar, Kitty Softpaws.
+
+MovieName: Call of Duty 
+Director: Brian Bloom
+Year: 2022
+Rating: 8.4
+Genre: Action
+Actors: Captain Price | Soap McTavish | Ghost | Kyle Garrick | Alejandro Vargas 
+Synopsis: Captain Price and the SAS partner with the CIA and the Urzikstani Liberation Force to retrieve stolen chemical weapons. The fight takes you from London to the Middle East and beyond, as this joint task force battles to stop a global war.
+
+MovieName: Ice Age
+Director: Chris Wedge 
+Year: 2001
+Rating: 7.5
+Genre: Animation
+Actors: Ray Romano | John Leguizamo | Denis Leary | Goran Visnjic | Jack Black
+Synopsis: Twenty-thousand years ago, Earth is a wondrous, prehistoric world filled with great danger, not the least of which is the beginning of the Ice Age. To avoid a really bad frostbite, the planet's majestic creatures - and a few small, slothful ones - begin migrating south . The story revolves around sub-zero heroes: a woolly mammoth, a saber-toothed tiger, a sloth and a prehistoric combination of a squirrel and rat that is known as Scrat.
+
+MovieName: Ice Age 2: The Meltdown
+Director: Carlos Saldanha
+Year: 2006
+Rating: 6.8 
+Genre: Animation
+Actors: Ray Romano | John Leguizamo | Denis Leary | Seann William Scott | Josh Peck
+Synopsis: With global warming threatening their once-icy domain with widespread flooding, Manny, Sid and Diego set out to find a safe haven. Along the way, another mammoth, who thinks she is an opossum, joins the travelers on their perilous quest.
+
+MovieName: Ice Age 3: Dawn of the Dinosaurs
+Director: Carlos Saldanha 
+Year: 2009
+Rating: 6.9
+Genre: Animation
+Actors:  Ray Romano | John Leguizamo | Denis Leary | Karen Disher | Joey King
+Synopsis: After Sid pilfers some dinosaur eggs, Manny, Diego and the rest of their prehistoric pals enter a mysterious, underground world to rescue the hapless sloth. During the course of their mission, the gang encounters many creatures great and small, including hungry carnivores and a relentless, dinosaur-hunting weasel named Buck.
+
+MovieName: Ice Age 4: Continental Drift
+Director: Steve Martino
+Year: 2012 
+Rating: 6.5 
+Genre: Animation
+Actors: Ray Romano | John Leguizamo | Denis Leary | Peter Dinklage | Alain Chabat 
+Synopsis: Scrat's continuous pursuit of an infernal acorn has world-changing consequences for Manny, Sid and Diego when the continents split apart. The continental crack-up separates Manny and his friends from the rest of the herd, including Manny's mate, Ellie and rebellious daughter Peaches. The pals are desperate to return home, but a pirate and his ragtag crew stand in their way.
+
+MovieName: Ice Age 5: Collision Course
+Director: Michael Thurmeier 
+Year: 2016
+Rating: 5.6
+Genre: Animation
+Actors: Ray Romano | John Leguizamo | Denis Leary | Stephanie Beatriz | Jessie J
+Synopsis: Manny the mammoth starts to worry when his daughter Peaches announces her engagement. Still unlucky in love, Sid the sloth volunteers to plan the couple's wedding. To Manny's dismay, nothing can stop the upcoming nuptials, except maybe the end of the world. When Scrat accidentally launches himself into outer space, he sets off a chain reaction that sends an asteroid hurtling toward Earth. Now, the entire herd must leave home to explore new lands and save itself from Scrat's cosmic blunder.
+
+MovieName: Batman Begins 
+Director: Christopher Nolan
+Year: 2005
+Rating: 8.2
+Genre: Action
+Actors: Christian Bale | Michael Caine | Liam Neeson | Katie Holmes | Gary Oldman
+Synopsis: A young Bruce Wayne travels to the Far East, where he's trained in the martial arts by Henri Ducard, a member of the mysterious League of Shadows. When Ducard reveals the League's true purpose -- the complete destruction of Gotham City -- Wayne returns to Gotham intent on cleaning up the city without resorting to murder. With the help of Alfred, his loyal butler, and Lucius Fox, a tech expert at Wayne Enterprises, Batman is born. 
+
+MovieName: The Dark Knight
+Director: Christopher Nolan
+Year: 2008
+Rating: 9.0
+Genre: Action
+Actors: Christian Bale | Heath Ledger | Aaron Eckhart | Michael Caine | Maggie Gyllenhaal
+Synopsis: With the help of allies Lt. Jim Gordon and DA Harvey Dent, Batman has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.
+
+MovieName: The Dark Knight Rises
+Director: Christopher Nolan
+Year: 2012
+Rating: 8.4
+Genre: Action
+Actors: Christian Bale | Gary Oldman | Tom Hardy | Joseph Gordon-Levitt | Anne Hathaway
+Synopsis: It has been eight years since Batman, in collusion with Commissioner Gordon, vanished into the night. Assuming responsibility for the death of Harvey Dent, Batman sacrificed everything for what he and Gordon hoped would be the greater good. However, the arrival of a cunning cat burglar and a merciless terrorist named Bane force Batman out of exile and into a battle he may not be able to win.
+
+MovieName: The Conjuring
+Director: James Wan
+Year: 2013
+Rating: 7.5
+Genre: Horror
+Actors: Vera Farmiga | Patrick Wilson | Lili Taylor | Ron Livingston | Shanley Caswell
+Synopsis: In 1970, paranormal investigators and demonologists Lorraine and Ed Warren are summoned to the home of Carolyn and Roger Perron. The Perrons and their five daughters have recently moved into a secluded farmhouse, where a supernatural presence has made itself known. Though the manifestations are relatively benign at first, events soon escalate in horrifying fashion, especially after the Warrens discover the house's macabre history.
+
+MovieName: The Conjuring 2
+Director: James Wan
+Year: 2016
+Rating: 7.3
+Genre: Horror
+Actors: Patrick Wilson | Vera Farmiga | Madison Wolfe | Frances O'Connor | Lauren Esposito
+Synopsis: In 1977, paranormal investigators Ed and Lorraine Warren come out of a self-imposed sabbatical to travel to Enfield, a borough in north London. There, they meet Peggy Hodgson, an overwhelmed single mother of four who tells the couple that something evil is in her home. Ed and Lorraine believe her story when the youngest daughter starts to show signs of demonic possession. As the Warrens try to help the besieged girl, they become the next targets of the malicious spirit.
+
+MovieName: The Conjuring: The Devil Made Me Do It
+Director: Michael Chaves
+Year: 2021
+Rating: 6.3
+Genre: Horror
+Actors: Patrick Wilson | Vera Farmiga | Ruairi O'Connor | Sarah Catherine Hook | Julian Hilliard
+Synopsis: Paranormal investigators Ed and Lorraine Warren take on one of the most sensational cases of their careers after a cop stumbles upon a dazed and bloodied young man walking down the road. Accused of murder, the suspect claims demonic possession as his defense, forcing the Warrens into a supernatural inquiry unlike anything they've ever seen before.
+
+MovieName: Transformers
+Director: Michael Bay
+Year: 2007
+Rating: 7.0
+Genre: Action
+Actors: Shia LaBeouf | Megan Fox | Josh Duhamel | Tyrese Gibson | Rachael Taylor
+Synopsis: The fate of humanity is at stake when two races of robots, the good Autobots and the villainous Decepticons, bring their war to Earth. The robots have the ability to change into different mechanical objects as they seek the key to ultimate power. Only a human youth, Sam Witwicky can save the world from total destruction.
+
+MovieName: Transformers: Revenge of the Fallen
+Director: Michael Bay
+Year: 2009
+Rating: 5.9
+Genre: Action
+Actors: Shia LaBeouf | Megan Fox | Josh Duhamel | Tyrese Gibson | John Turturro
+Synopsis: Two years after he and his Autobot friends saved the Earth from the Decepticons, Sam Witwicky faces a new battle: college. Meanwhile, Optimus Prime and the Autobots are working with a secret military organization and trying to make a home for themselves on Earth. When an ancient Decepticon known as The Fallen rises up to wreak vengeance, Sam and his girlfriend, Mikaela, must figure out the history of the Transformers on Earth and find a way to defeat The Fallen once and for all.
+
+MovieName: Transformers: Dark of the Moon
+Director: Michael Bay
+Year: 2011 
+Rating: 6.2 
+Genre: Action
+Actors: Shia LaBeouf | Rosie Huntington-Whiteley | Josh Duhamel | John Turturro | Tyrese Gibson
+Synopsis: Sam Witwicky and his new girlfriend, Carly, join the fray when the evil Decepticons renew their longstanding war against the Autobots. Optimus Prime believes that resurrecting ancient Transformer Sentinel Prime, once the leader of the Autobots, may lead to victory. That decision, however, has devastating consequences; the war appears to tip in favor of the Decepticons, leading to a climactic battle in Chicago.
+
+MovieName: Transformers: Age of Extinction
+Director: Michael Bay
+Year: 2014
+Rating: 5.6 
+Genre: Action
+Actors: Mark Wahlberg | Stanley Tucci | Kelsey Grammer | Nicola Peltz Beckham |	Jack Reynor
+Synopsis: After an epic battle, a great city lies in ruins, but the Earth itself is saved. As humanity begins to pick up the pieces, a shadowy group emerges to try to take control of history. Meanwhile, an ancient and powerful new menace sets its sights on Earth. A new group of humans, led by Cade Yeager, helps Optimus Prime and the Autobots rise up to meet their most fearsome challenge yet: a worldwide war of good versus evil.
+
+MovieName: Transformers: The Last Knight
+Director: Michael Bay
+Year: 2017
+Rating: 5.2
+Genre: Action
+Actors: Mark Wahlberg | Anthony Hopkins | Josh Duhamel | Laura Haddock | Santiago Cabrera
+Synopsis: Humans are at war with the Transformers, and Optimus Prime is gone. The key to saving the future lies buried in the secrets of the past and the hidden history of Transformers on Earth. Now, it's up to the unlikely alliance of inventor Cade Yeager, Bumblebee, an English lord and an Oxford professor to save the world.
+ 
+MovieName: Mortal Kombat
+Director: Ed Boon
+Year: 2019
+Rating: 7.8
+Genre: Action
+Actors: Scorpion | Sub-Zero | Johnny Cage | Sonya Blade | Lord Raiden
+Synopsis: When a time lord starts merging past with the present, versions of heroes from both Mortal Kombat timelines must unite to right past wrongs and save the world.
+
+MovieName: The Mummy
+Director: Stephen Sommers
+Year: 1999
+Rating: 7.1
+Genre: Adventure
+Actors: Brendan Fraser | Rachel Weisz | John Hannah | Arnold Vosloo | Kevin J. O'Connor
+Synopsis: The Mummy is a rousing, suspenseful and horrifying epic about an expedition of treasure-seeking explorers in the Sahara Desert in 1925. Stumbling upon an ancient tomb, the hunters unwittingly set loose a 3,000-year-old legacy of terror, which is embodied in the vengeful reincarnation of an Egyptian priest who had been sentenced to an eternity as one of the living dead.
+
+MovieName: The Mummy Returns
+Director: Stephen Sommers 
+Year: 2001
+Rating: 6.4
+Genre: Action
+Actors: Brendan Fraser | Rachel Weisz | John Hannah | Arnold Vosloo | Oded Fehr
+Synopsis: The evil mummy Imhotep returns to wreak havoc as he resumes his relentless search for power and immortality. To make matters worse, another ancient evil has been unleashed, even more dangerous than Imhotep. Only the heroic Rick O'Connell and his intrepid Egyptologist wife stand in the way of these twin terrors as they embark upon a desperate mission to save the world.
+
+MovieName: The Mummy: Tomb of the Dragon Emperor
+Director: Rob Cohen
+Year: 2008
+Rating: 5.2
+Genre: Action
+Actors: Brendan Fraser | Jet Li | Maria Bello | John Hannah | Michelle Yeoh
+Synopsis: Cursed by a devious sorceress, China's ruthless Dragon Emperor and his vast army lie buried in clay for millennia. When young archaeologist Alex O'Connell is tricked into reviving the emperor, he and his famous parents must find a way to send the ghoul back to the grave before he can awaken his vast army and take over the world.
+
+MovieName: Star Wars: Episode I - The Phantom Menace
+Director: George Lucas
+Year: 1999
+Rating: 6.5
+Genre: Adventure
+Actors: Liam Neeson | Ewan McGregor | Natalie Portman | Jake Lloyd | Ian McDiarmid
+Synopsis: Obi-Wan Kenobi is a young apprentice Jedi knight under the tutelage of Qui-Gon Jinn; Anakin Skywalker, who will later father Luke Skywalker and become known as Darth Vader, is just a 9-year-old boy. When the Trade Federation cuts off all routes to the planet Naboo, Qui-Gon and Obi-Wan are assigned to settle the matter.
+
+MovieName: Star Wars: Episode II - Attack of the Clones
+Director: George Lucas
+Year: 2002
+Rating: 6.6
+Genre: Adventure
+Actors: Ewan McGregor | Natalie Portman | Hayden Christensen | Christopher Lee | Samuel L. Jackson
+Synopsis: Set ten years after the events of "The Phantom Menace," the Republic continues to be mired in strife and chaos. A separatist movement encompassing hundreds of planets and powerful corporate alliances poses new threats to the galaxy that even the Jedi cannot stem. These moves, long planned by an as yet unrevealed and powerful force, lead to the beginning of the Clone Wars -- and the beginning of the end of the Republic.
+
+MovieName: Star Wars: Episode III - Revenge of the Sith
+Director: George Lucas
+Year: 2005
+Rating: 7.6
+Genre: Adventure
+Actors: Ewan McGregor | Natalie Portman | Hayden Christensen | Christopher Lee | Samuel L. Jackson
+Synopsis: It has been three years since the Clone Wars began. Jedi Master Obi-Wan Kenobi and Jedi Knight Anakin Skywalker rescue Chancellor Palpatine from General Grievous, the commander of the droid armies, but Grievous escapes. Suspicions are raised within the Jedi Council concerning Chancellor Palpatine, with whom Anakin has formed a bond. Asked to spy on the chancellor, and full of bitterness toward the Jedi Council, Anakin embraces the Dark Side.
+
+MovieName: Star Wars: Episode IV - A New Hope
+Director: George Lucas
+Year: 1977
+Rating: 8.6
+Genre: Adventure
+Actors: Mark Hamill | Harrison Ford | Carrie Fisher | Peter Cushing | Alec Guinness
+Synopsis: The Imperial Forces -- under orders from cruel Darth Vader -- hold Princess Leia hostage, in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker and Han Solo, captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 and C-3PO to rescue the beautiful princess, help the Rebel Alliance, and restore freedom and justice to the Galaxy.
+
+MovieName: Star Wars: Episode V - The Empire Strikes Back
+Director: Irvin Kershner
+Year: 1980
+Rating: 8.7
+Genre: Adventure
+Actors: Mark Hamill | Harrison Ford | Carrie Fisher | Billy Dee Williams | Anthony Daniels
+Synopsis: The adventure continues in this "Star Wars" sequel. Luke Skywalker, Han Solo, Princess Leia and Chewbacca face attack by the Imperial forces and its AT-AT walkers on the ice planet Hoth. While Han and Leia escape in the Millennium Falcon, Luke travels to Dagobah in search of Yoda. Only with the Jedi master's help will Luke survive when the dark side of the Force beckons him into the ultimate duel with Darth Vader.
+
+MovieName: Star Wars: Episode VI - Return of the Jedi
+Director: Richard Marquand
+Year: 1983
+Rating: 8.3
+Genre: Adventure
+Actors: Mark Hamill | Harrison Ford | Carrie Fisher | Billy Dee Williams | Anthony Daniels
+Synopsis: Luke Skywalker battles horrible Jabba the Hut and cruel Darth Vader to save his comrades in the Rebel Alliance and triumph over the Galactic Empire. Han Solo and Princess Leia reaffirm their love and team with Chewbacca, Lando Calrissian, the Ewoks and the androids C-3PO and R2-D2 to aid in the disruption of the Dark Side and the defeat of the evil emperor.
+
+MovieName: Star Wars: Episode VII - The Force Awakens
+Director: J.J. Abrams
+Year: 2015
+Rating: 7.8
+Genre: Adventure
+Actors: Harrison Ford | Mark Hamill | Carrie Fisher | Adam Driver | Daisy Ridley
+Synopsis: Thirty years after the defeat of the Galactic Empire, Han Solo and his young allies face a new threat from the evil Kylo Ren and the First Order.
+
+MovieName: Star Wars: Episode VIII - The Last Jedi
+Director: Rian Johnson
+Year: 2017
+Rating: 6.9
+Genre: Adventure
+Actors: Mark Hamill | Carrie Fisher | Adam Driver | Adam Driver | John Boyega
+Synopsis: Luke Skywalker's peaceful and solitary existence gets upended when he encounters Rey, a young woman who shows strong signs of the Force. Her desire to learn the ways of the Jedi forces Luke to make a decision that changes their lives forever. Meanwhile, Kylo Ren and General Hux lead the First Order in an all-out assault against Leia and the Resistance for supremacy of the galaxy.
+
+MovieName: Star Wars: Episode IX - The Rise of Skywalker
+Director: J.J. Abrams
+Year: 2019
+Rating: 6.5
+Genre: Adventure
+Actors: Adam Driver | Daisy Ridley | John Boyega | Oscar Isaac | Anthony Daniels
+Synopsis: When it's discovered that the evil Emperor Palpatine did not die at the hands of Darth Vader, the rebels must race against the clock to find out his whereabouts. Finn and Poe lead the Resistance to put a stop to the First Order's plans to form a new Empire, while Rey anticipates her inevitable confrontation with Kylo Ren. Warning: Some flashing-lights scenes in this film may affect photosensitive viewers.
+
+MovieName: The Bourne Identity
+Director: Doug Liman
+Year: 2002
+Rating: 7.9
+Genre: Thriller
+Actors: Matt Damon | Franka Potente | Chris Cooper | Clive Owen | Brian Cox
+Synopsis: The story of a man, salvaged, near death, from the ocean by an Italian fishing boat. When he recuperates, the man suffers from total amnesia, without identity or background... except for a range of extraordinary talents in fighting, linguistic skills and self-defense that speak of a dangerous past. He sets out on a desperate search-assisted by the initially rebellious Marie - to discover who he really is, and why he's being lethally pursued by assassins.
+
+MovieName: The Bourne Supremacy
+Director: Paul Greengrass
+Year: 2004
+Rating: 7.7
+Genre: Thriller
+Actors: Matt Damon | Franka Potente | Brian Cox | Julia Stiles | Karl Urban
+Synopsis: Jason Bourne is living in India when he is framed by Russian agent Kirill for the theft of millions from the CIA. Kirill begins to pursue Bourne, intending to assassinate him -- but while Bourne and his girlfriend, Marie, are on the run, a shot meant for him kills her instead. Vowing revenge, Bourne sets out to prove his innocence and bring the culprits to justice, but he has to evade CIA head Pamela Landry, who is convinced he is guilty.
+
+MovieName: The Bourne Ultimatum
+Director: Paul Greengrass
+Year: 2007
+Rating: 8.0
+Genre: Thriller
+Actors: Matt Damon | Julia Stiles | David Strathairn | Scott Glenn | Paddy Considine
+Synopsis: A former CIA assassin continues his quest to fill in memory gaps. When a `Guardian' reporter stumbles onto his trail, the man spies his chance to blow the Blackbriar black-ops brigade wide open. With some very powerful people intent on keeping their skeletons buried, he is in more danger than ever before, as his former paymasters send a series of elite killers after their reformed ex-colleague.
+
+MovieName: The Bourne Legacy
+Director: Tony Gilroy
+Year: 2012 
+Rating: 6.6
+Genre: Thriller
+Actors: Jeremy Renner | Scott Glenn | Stacy Keach | Edward Norton | Donna Murphy
+Synopsis: When the actions of Jason Bourne spark a fire that threatens to burn down decades of research across a number of secret intelligence agencies, Eric Byer, the man who built the programs, decides he must sacrifice one of them: Outcome. Aaron Cross, one of Outcome's six agents, and research scientist Marta Shearing (Rachel Weisz) go on the run when Byer targets them for termination. But Cross proves to be a far deadlier target than Byer realizes.
+
+MovieName: Jason Bourne
+Director: Paul Greengrass
+Year: 2016
+Rating: 6.6
+Genre: Thriller
+Actors: Matt Damon | Tommy Lee Jones | Alicia Vikander | Vincent Cassel | Julia Stiles
+Synopsis: It's been 10 years since Jason Bourne walked away from the agency that trained him to become a deadly weapon. Hoping to draw him out of the shadows, CIA director Robert Dewey assigns hacker and counterinsurgency expert Heather Lee to find him. Lee suspects that former operative Nicky Parsons is also looking for him. As she begins tracking the duo, Bourne finds himself back in action battling a sinister network that utilizes terror and technology to maintain unchecked power.
+
+MovieName: National Treasure
+Director: Jon Turteltaub
+Year: 2004
+Rating: 6.9
+Genre: Adventure
+Actors: Nicolas Cage | Diane Kruger | Justin Bartha | Sean Bean | Jon Voight
+Synopsis: Historian and code-breaker Ben Gates has been searching his whole life for a rumored treasure dating back to the creation of the United States. Joining an expedition led by fellow treasure hunter Ian Howe, Gates finds an ice-locked Colonial ship in the Arctic Circle that contains a clue linking the treasure to the Declaration of Independence. But when Howe betrays him, Gates has to race to get to the document ahead of his so-called colleague.
+
+MovieName: National Treasure: Book of Secrets
+Director: Jon Turteltaub
+Year: 2007
+Rating: 6.5 
+Genre: Adventure
+Actors: Nicolas Cage | Justin Bartha | Diane Kruger | Jon Voight | Helen Mirren
+Synopsis: Ben Gates and his father Patrick are surprised by Mitch Wilkinson's claims that their ancestor was a conspirator in the assassination of Abraham Lincoln based on the missing page of Booth's diary that he possesses. Outraged, together with his wife, Abigail, and his best friend, the writer Riley Poole, they head to France, England and Washington to collect clues to prove his honour.
+
+MovieName: Cars 2
+Director: Bradford Lewis
+Year: 2011
+Rating: 6.2
+Genre: Animation
+Actors: Larry the Cable Guy | Owen Wilson | Michael Caine | Emily Mortimer | Eddie Izzard
+Synopsis: Racecar Lightning McQueen and his tow-truck buddy, Mater, have had their share of adventures together but nothing like what they experience when they head overseas for the first-ever World Grand Prix. While Lightning has his eye on the road to the championship, Mater takes a detour to international espionage when he meets British master spy Finn McMissile and stunning spy-in-training Holley Shiftwell.
+
+MovieName: Cars 3
+Director: Brian Fee
+Year: 2017
+Rating: 6.7 
+Genre: Animation
+Actors: Owen Wilson | Cristela Alonzo | Chris Cooper | Nathan Fillion | Larry the Cable Guy
+Synopsis: Blindsided by a new generation of blazing-fast cars, the legendary Lighting McQueen finds himself pushed out of the sport that he loves. Hoping to get back in the game, he turns to Cruz Ramirez, an eager young technician who has her own plans for winning. With inspiration from the Fabulous Hudson Hornet and a few unexpected turns, No. 95 prepares to compete on Piston Cup Racing's biggest stage.
+
+MovieName: Madagascar
+Director: Tom McGrath 
+Year: 2005
+Rating: 6.9
+Genre: Animation
+Actors: Ben Stiller | Chris Rock | David Schwimmer | Jada Pinkett Smith | Sacha Baron Cohen
+Synopsis: At New York's Central Park Zoo, a lion, a zebra, a giraffe, and a hippo are best friends and stars of the show. But when one of the animals goes missing from their cage, the other three break free to look for him, only to find themselves reunited ... on a ship en route to Africa.
+
+MovieName: Madagascar: Escape 2 Africa
+Director: Tom McGrath
+Year: 2008
+Rating: 6.6
+Genre: Animation
+Actors: Ben Stiller | Chris Rock | David Schwimmer | Jada Pinkett Smith | Sacha Baron Cohen
+Synopsis: Alex, Morty and other zoo animals find a way to escape from Madagascar when the penguins reassemble a wrecked airplane. The precariously repaired craft stays airborne just long enough to make it to the African continent. There the New Yorkers encounter members of their own species for the first time. Africa proves to be a wild place, but Alex and company wonder if it is better than their Central Park home.
+
+MovieName: Madagascar 3: Europe's Most Wanted
+Director: Tom McGrath
+Year: 2012
+Rating: 6.8
+Genre: Animation
+Actors: Ben Stiller | Chris Rock | David Schwimmer | Jada Pinkett Smith | Sacha Baron Cohen
+Synopsis: Animal pals Alex, Marty, Melman and Gloria are still trying to make it back to New York's Central Park Zoo. They are forced to take a detour to Europe to find the penguins and chimps who broke the bank at a Monte Carlo casino. When French animal-control officer Capitaine Chantel DuBois picks up their scent, Alex and company are forced to hide out in a traveling circus.
+
+MovieName: Rush Hour
+Director: Brett Ratner
+Year: 1998
+Rating: 7.0
+Genre: Comedy
+Actors: Ken Leung | Jackie Chan | Tom Wilkinson | Tzi Ma | Chris Tucker
+Synopsis: When a Chinese diplomat's daughter is kidnapped in Los Angeles, he calls in Hong Kong Detective Inspector Lee to assist the FBI with the case. But the FBI doesn't want anything to do with Lee, and they dump him off on the LAPD, who assign wisecracking Detective James Carter to watch over him. Although Lee and Carter can't stand each other, they choose to work together to solve the case on their own when they figure out they've been ditched by both the FBI and police.
+
+MovieName: Rush Hour 2
+Director: Brett Ratner
+Year: 2001
+Rating: 6.6
+Genre: Comedy
+Actors: Jackie Chan | Chris Tucker | John Lone | Ziyi Zhang | Roselyn Sanchez
+Synopsis: After an explosion at the US Embassy in Hong Kong kills two customs agents investigating currency smuggling, Inspector Lee and James Carter search for the mastermind. Ricky Tan, head of the Fu-Cang-Long Triad, sends out his minions to insure that Carter and Lee don't solve the case.
+
+MovieName: Rush Hour 3
+Director: Brett Ratner
+Year: 2007
+Rating: 6.2
+Genre: Comdey
+Actors: Chris Tucker | Jackie Chan | Max von Sydow | Hiroyuki Sanada | Yvan Attal
+Synopsis: East meets West again when the assassination of Ambassador Han leads to the reunion of Lee and Carter. In Paris, the pair must stay one step ahead of Chinese gangsters, and Lee's childhood friend, as they track down an envelope containing the identity of a powerful crime lord.

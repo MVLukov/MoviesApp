@@ -1,0 +1,114 @@
+@model List<Director>
+
+@{
+    ViewData["Title"] = "Directors List";
+    var canConnect = ViewData["canConnect"];
+    var notFound = ViewData["notFound"];
+
+    int pageCount = 0;
+    int currentPage = 0;
+    int pageNumber = 0;
+    var search = ViewContext.HttpContext.Request.Query["search"];
+
+    if(ViewData["pageCount"] != null)
+    {
+        pageCount = (int)ViewData["pageCount"];
+    } 
+
+    if(ViewData["currentPage"] != null)
+    {
+        currentPage = (int)ViewData["currentPage"];
+    }
+}
+
+<div class="container">
+    @if (canConnect != null && (bool)canConnect == false)
+    {
+        <div class="alert alert-warning">Can't connect to database!</div>
+    }
+    else
+    {
+        @if (notFound != null && (bool)notFound == true)
+        {
+            <div class="alert alert-warning">Directors were not found! <a asp-controller="Create" asp-action="Director">Add a director here.</a></div>
+        }
+        else
+        {
+            <div class="row">
+                <form class="d-flex mb-3" asp-controller="Home" method="get" asp-action="Directors">
+                    <input class="form-control me-sm-2" name="search" type="text" placeholder="Search by director's name">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <table class="table table-active table-hover table-borderless table-striped text-center">
+                    <thead>
+                        <th scope="col">Director's Id</th>
+                        <th scope="col">Director's name</th>
+                        <th scope="col">Actions</th>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            string tm = $"#modal{item.DirectorId}"; //id for modal; used in button toggle
+                            string mid = $"modal{item.DirectorId}"; //modal's id
+
+                            <tr>
+                                <th scope="row">@item.DirectorId</th>
+                                <td>@item.DirectorName</td>
+                                <td>
+                                    <a asp-controller="Details" asp-action="Director" asp-route-id="@item.DirectorId"
+                            class="btn btn-info mb-1">Details</a>
+                                    <button class="btn btn-primary mb-1" data-bs-toggle="modal" data-bs-target="@tm">Delete</button>
+                                </td>
+                            </tr>
+
+                            <div class="modal fade" id="@mid" tabindex="-1">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Confirm action</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"></span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure you want to delete <i>@item.DirectorName.ToUpper()</i></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a type="button" class="btn btn-primary" asp-controller="Delete" asp-action="Director"
+                                    asp-route-id="@item.DirectorId">Yes,
+                                                delete!</a>
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, close!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </tbody>
+                </table>
+                <div class="btn-group" role="group">
+                    @if (currentPage == 1)
+                    {
+                        <a role="button" class="btn btn-secondary disabled">Previous</a>
+                    } else {
+                        pageNumber = currentPage - 1;
+                        @Html.ActionLink("Previous", "Directors", "Home", new {search, currentPage = pageNumber}, new { @class = "btn btn-secondary"})
+                    }
+                    @Html.ActionLink("1", "Directors", "Home", new {search, currentPage = 1}, new { @class = "btn btn-secondary"})
+                    
+                    <a role="button" class="btn btn-primary">@currentPage</a>
+
+                    @Html.ActionLink(pageCount.ToString(), "Directors", "Home", new {search, currentPage = pageCount}, new { @class = "btn btn-secondary"})
+                    
+                    @if (currentPage == pageCount)
+                    {
+                        @Html.ActionLink("Next", "Directors", "Home", new {search, currentPage}, new { @class = "btn btn-secondary disabled"})
+                    } else {
+                        pageNumber = currentPage + 1;
+                        @Html.ActionLink("Next", "Directors", "Home", new {search, currentPage = pageNumber}, new { @class = "btn btn-secondary" })
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,107 @@
+@model Movie
+
+@{
+    ViewData["Title"] = "Edit Movie";
+    var canConnect = ViewData["canConnect"];
+    var successful = ViewData["successful"];
+    var notFound = ViewData["notFound"];
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"
+    integrity="sha512-pF+DNRwavWMukUv/LyzDyDMn8U2uvqYQdJN0Zvilr6DDo/56xPDZdDoyPDYZRSL4aOKO/FGKXTpzDyQJ8je8Qw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.min.css"
+    integrity="sha512-bkB9w//jjNUnYbUpATZQCJu2khobZXvLP5GZ8jhltg7P/dghIrTaSJ7B/zdlBUT0W/LXGZ7FfCIqNvXjWKqCYA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container">
+    @if (canConnect != null && (bool)canConnect == false)
+    {
+        <div class="alert alert-warning">Can't connect to database!</div>
+    }
+    else
+    {
+        @if (notFound != null && (bool)notFound == true)
+        {
+            <div class="alert alert-warning">Movie was not found!</div>
+        }
+        else
+        {
+            @if (successful != null && (bool)successful == true)
+            {
+                <div class="alert alert-success">Movie was updated succesfuly!</div>
+            }
+
+            <form asp-controller="Edit" asp-action="Movie" method="post">
+                <div class="row">
+                    <input type="text" asp-for="MovieId" hidden>
+                    <div class="form-group col-md-6 mt-2">
+                        <label asp-for="MovieName">Movie's name</label>
+                        <input asp-for="MovieName" class="form-control" placeholder="Enter movie's name" />
+                        <span asp-validation-for="MovieName" class="text-warning"></span>
+                    </div>
+                    <div class="from-group col-md-6 mt-2">
+                        <label asp-for="MovieGenre">Movie's genre</label>
+                        <select asp-for="MovieGenre" id="genres" asp-items="ViewBag.genres">
+                        </select>
+                        <span asp-validation-for="MovieGenre" class="text-warning"></span>
+                    </div>
+                    <div class="form-group col-md-6 mt-2">
+                        <label asp-for="MovieSynopsis">Movie' synopsis</label>
+                        <textarea asp-for="MovieSynopsis" class="form-control" maxlength="500" class="form-control"
+                    placeholder="Enter movie's synopsis"></textarea>
+                        <span asp-validation-for="MovieSynopsis" class="text-warning"></span>
+                    </div>
+                    <div class="form-group col-md-6 mt-2">
+                        <label asp-for="DirectorId">Movie's director</label>
+                        <select asp-for="DirectorId" asp-items="ViewBag.directors" id="directors">
+                        </select>
+                        <span asp-validation-for="DirectorId" class="text-warning"></span>
+                    </div>
+                    <div class="form-group col-md-6 mt-2">
+                        <label asp-for="MovieYear">Movie' year</label>
+                        <input asp-for="MovieYear" class="form-control" type="number" min="1900" max="2099" step="1"
+                    placeholder="Enter movie's year" />
+                        <span asp-validation-for="MovieYear" class="text-warning"></span>
+                    </div>
+                    <div class="form-group col-md-6 mt-2">
+                        <label asp-for="ActorsSelect">Movie's actors</label>
+                        <select asp-for="ActorsSelect" asp-items="ViewBag.actors" id="actors" multiple>
+                            @foreach (var item in Model.Actors)
+                            {
+                                <option value="@item.ActorId" selected>@item.ActorName</option>
+                            }
+                        </select>
+                        <span asp-validation-for="ActorsSelect" class="text-warning"></span>
+                    </div>
+                    <div class="form-group col-md-6 mt-2">
+                        <label asp-for="MovieRating">Movie's rating</label>
+                        <input asp-for="MovieRating" class="form-control" type="number" step="0.01"
+                        placeholder="Enter movie's rating" />
+                        <span asp-validation-for="MovieRating" class="text-warning"></span>
+                    </div>
+                    <input type="submit" class="btn btn-primary mt-2" value="Update">
+                </div>
+            </form>
+        }
+    }
+</div>
+
+<script>
+    $("document").ready(function () {
+        $("#actors").selectize({
+            placeholder: "Select actors",
+            plugins: ["restore_on_backspace"]
+        });
+        $("#directors").selectize({
+            maxItems: 1,
+            placeholder: "Select a director",
+            plugins: ["restore_on_backspace"],
+        });
+        $("#genres").selectize({
+            maxItems: 1,
+            placeholder: "Select a genre",
+            plugins: ["restore_on_backspace"],
+        });
+    });
+</script>

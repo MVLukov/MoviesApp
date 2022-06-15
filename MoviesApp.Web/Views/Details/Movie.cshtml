@@ -1,0 +1,89 @@
+@model MovieView
+@{
+    ViewData["Title"] = "Movie Details";
+    var canConnect = ViewData["canConnect"];
+    var notFound = ViewData["notFound"];
+}
+
+<div class="container">
+
+@if (canConnect != null && (bool)canConnect == false)
+{ 
+    <div class="alert alert-warning">Can't connect to database!</div>
+}
+else
+{
+    if (notFound != null && (bool)notFound == true)
+    {
+        <div class="alert alert-warning">Movie was not found!</div>
+    }
+    else
+    {
+        if (Model != null)
+        {
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card" style="height: 100%;">
+                        <div class="card-header">
+                            <h3>@Model.MovieName</h3>
+                            @if(Model.Director == null){
+                                <h6 class="card-subtitle text-muted">Director: Not specified!</h6>
+                            } else {
+                                <h6 class="card-subtitle text-muted">Director: <a asp-controller="Details" asp-action="Director" asp-route-id=@Model.Director.DirectorId>@Model.Director.DirectorName</a></h6>
+                            }
+                            <span class="badge bg-danger mt-1">@Model.MovieGenre</span>
+                            <span class="badge bg-info mt-1">@Model.MovieYear</span>
+                            <span class="badge bg-warning mt-1">@Model.MovieRating</span>
+                        </div>
+                        <div class="card-body">
+                            <h5>Movie's synopsis</h5>
+                            <p class="card-text">@Model.MovieSynopsis</p>
+
+                            <h5>Movie's actors</h5>
+                            @if (Model.Actors.Count == 0)
+                            {
+                                <p>Actors are not specified!</p>
+                            }
+                            else
+                            {
+                                <ul>
+                                    @foreach (var actor in Model.Actors)
+                                    {
+                                        <li><a asp-controller="Details" asp-action="Actor" asp-route-id="@actor.ActorId">@actor.ActorName</a></li>
+                                    }
+                                </ul>
+                            }
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-info" asp-controller="Edit" asp-action="Movie" asp-route-id="@Model.MovieId">Edit</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Confirm action</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to delete <i>@Model.MovieName.ToUpper()</i></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-primary" asp-controller="Delete" asp-action="Movie"
+                                asp-route-id="@Model.MovieId">Yes,
+                                delete!</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, close!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+}
+</div>

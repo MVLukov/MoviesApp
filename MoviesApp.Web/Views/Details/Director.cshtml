@@ -1,0 +1,77 @@
+@model DirectorView
+@{
+    ViewData["Title"] = "Director Details";
+    var canConnect = ViewData["canConnect"];
+    var notFound = ViewData["notFound"];
+}
+
+<div class="container">
+
+@if (canConnect != null && (bool)canConnect == false)
+{
+    <div class="alert alert-warning">Can't connect to database!</div>
+}
+else
+{
+    if (notFound != null && (bool)notFound == true)
+    {
+        <div class="alert alert-warning">Director was not found!</div>
+    }
+    else
+    {
+        if (Model != null)
+        {
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card m-3">
+                        <h3 class="card-header">@Model.DirectorName</h3>
+                        <div class="card-body">
+                            <h4>Movies</h4>
+                            @if (Model.Movies.Count == 0)
+                            {
+                                <p>This director doesn't appear in any movie.</p>
+                            }
+                            @if (Model.Movies.Count > 0)
+                            {
+                                <ul>
+                                    @foreach (var item in Model.Movies)
+                                    {
+                                        <li><a asp-controller="Details" asp-action="Movie" asp-route-id=@item.MovieId>@item.MovieName</a></li>
+                                    }
+                                </ul>
+                            }
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-info" asp-controller="Edit" asp-action="Director"
+                                asp-route-id="@Model.DirectorId">Edit</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Confirm action</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to delete <i>@Model.DirectorName.ToUpper()</i></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-primary" asp-controller="Delete" asp-action="Director"
+                                asp-route-id="@Model.DirectorId">Yes,
+                                delete!</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, close!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+}
+</div>

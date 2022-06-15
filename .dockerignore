@@ -1,0 +1,8 @@
+.env.example
+docker-compose.yaml
+Dockerfile
+Readme.md
+MoviesApp.Console/
+**/.vscode/
+**/.bin/
+**/.obj/

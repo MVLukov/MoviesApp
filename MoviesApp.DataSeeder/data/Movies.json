@@ -1,0 +1,173 @@
+[
+    {
+        "MovieId": 1,
+        "MovieName": "The Shawshank Redemption",
+        "MovieYear": "1994",
+        "DirectorId": 1,
+        "MovieGenre": "Drama",
+        "MovieRating": 9.300000190734864,
+        "MovieSynopsis": "Andy Dufresne (Tim Robbins) is sentenced to two consecutive life terms in prison for the murders of his wife and her lover and is sentenced to a tough prison. However, only Andy knows he didn't commit the crimes. While there, he forms a friendship with Red (Morgan Freeman), experiences brutality of prison life, adapts, helps the warden, etc., all in 19 years."
+    },
+    {
+        "MovieId": 2,
+        "MovieName": "The Dark Knight",
+        "MovieYear": "2008",
+        "DirectorId": 2,
+        "MovieGenre": "Action",
+        "MovieRating": 9.100000381469729,
+        "MovieSynopsis": "With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism."
+    },
+    {
+        "MovieId": 3,
+        "MovieName": "The Green Mile",
+        "MovieYear": "1990",
+        "DirectorId": 1,
+        "MovieGenre": "Crime",
+        "MovieRating": 8.600000381469727,
+        "MovieSynopsis": "Paul Edgecomb (Tom Hanks) walked the mile with a variety of cons. He had never encountered someone like John Coffey (Michael Clarke Duncan), a massive black man convicted of brutally killing a pair of young sisters. Coffey had the size and strength to kill anyone, but not the demeanor. Beyond his simple, naive nature and a deathly fear of the dark, Coffey seemed to possess a prodigious, supernatural gift. Paul began to question whether Coffey was truly guilty of murdering the two girl"
+    },
+    {
+        "MovieId": 4,
+        "MovieName": "Inglourious Basterds",
+        "MovieYear": "2009",
+        "DirectorId": 3,
+        "MovieGenre": "Adventure",
+        "MovieRating": 8.300000190734864,
+        "MovieSynopsis": "It is the first year of Germany's occupation of France. Allied officer Lt. Aldo Raine (Brad Pitt) assembles a team of Jewish soldiers to commit violent acts of retribution against the Nazis, including the taking of their scalps. He and his men join forces with Bridget von Hammersmark, a German actress and undercover agent, to bring down the leaders of the Third Reich. Their fates converge with theater owner Shosanna Dreyfus, who seeks to avenge the Nazis' execution of her family."
+    },
+    {
+        "MovieId": 5,
+        "MovieName": "There Will Be Blood",
+        "MovieYear": "2007",
+        "DirectorId": 5,
+        "MovieGenre": "Drama",
+        "MovieRating": 8.199999809265137,
+        "MovieSynopsis": "Ruthless silver miner, turned oil prospector, Daniel Plainview moves to oil-rich California. Using his adopted son HW to project a trustworthy, family-man image, Plainview cons local landowners into selling him their valuable properties for a pittance. However, local preacher Eli Sunday suspects Plainviews motives and intentions, starting a slow-burning feud that threatens both their lives."
+    },
+    {
+        "MovieId": 6,
+        "MovieName": "Harry Potter and the Sorcerers Stone",
+        "MovieYear": "2001",
+        "DirectorId": 6,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 7.599999904632568,
+        "MovieSynopsis": "Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths."
+    },
+    {
+        "MovieId": 7,
+        "MovieName": "Harry Potter and the Chamber of Secrets",
+        "MovieYear": "2002",
+        "DirectorId": 6,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 7.400000095367432,
+        "MovieSynopsis": "The second instalment of boy wizard Harry Potter's adventures at Hogwarts School of Witchcraft and Wizardry, based on the novel by JK Rowling. A mysterious elf tells Harry to expect trouble during his second year at Hogwarts, but nothing can prepare him for trees that fight back, flying cars, spiders that talk and deadly warnings written in blood on the walls of the school."
+    },
+    {
+        "MovieId": 8,
+        "MovieName": "Harry Potter and the Prisoner of Azkaban",
+        "MovieYear": "2004",
+        "DirectorId": 7,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 7.900000095367432,
+        "MovieSynopsis": "Harry Potter's (Daniel Radcliffe) third year at Hogwarts starts off badly when he learns deranged killer Sirius Black (Gary Oldman) has escaped from Azkaban prison and is bent on murdering the teenage wizard. While Hermione's (Emma Watson) cat torments Ron's (Rupert Grint) sickly rat, causing a rift among the trio, a swarm of nasty Dementors is sent to protect the school from Black. A mysterious new teacher helps Harry learn to defend himself, but what is his secret tie to"
+    },
+    {
+        "MovieId": 9,
+        "MovieName": "Harry Potter and the Goblet of Fire",
+        "MovieYear": "2005",
+        "DirectorId": 8,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 7.699999809265137,
+        "MovieSynopsis": "The fourth movie in the Harry Potter franchise sees Harry (Daniel Radcliffe) returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron (Rupert Grint) and Hermione (Emma Watson). There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest."
+    },
+    {
+        "MovieId": 10,
+        "MovieName": "Harry Potter and the Order of the Phoenix",
+        "MovieYear": "2007",
+        "DirectorId": 9,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 7.5,
+        "MovieSynopsis": "Now in his fifth year at Hogwarts, Harry (Daniel Radcliffe) learns that many in the wizarding community do not know the truth of his encounter with Lord Voldemort. Cornelius Fudge, minister of Magic, appoints his toady, Dolores Umbridge, as Defense Against the Dark Arts teacher, for he fears that professor Dumbledore will take his job. But her teaching is deficient and her methods, cruel, so Harry prepares a group of students to defend the school against a rising tide of evil."
+    },
+    {
+        "MovieId": 11,
+        "MovieName": "Harry Potter and the Half-Blood Prince",
+        "MovieYear": "2009",
+        "DirectorId": 9,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 7.599999904632568,
+        "MovieSynopsis": "As Death Eaters wreak havoc in both Muggle and Wizard worlds, Hogwarts is no longer a safe haven for students. Though Harry (Daniel Radcliffe) suspects there are new dangers lurking within the castle walls, Dumbledore is more intent than ever on preparing the young wizard for the final battle with Voldemort. Meanwhile, teenage hormones run rampant through Hogwarts, presenting a different sort of danger. Love may be in the air, but tragedy looms, and Hogwarts may never be the same again."
+    },
+    {
+        "MovieId": 12,
+        "MovieName": "Harry Potter and the Deathly Hallows: Part 1",
+        "MovieYear": "2010",
+        "DirectorId": 9,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 7.699999809265137,
+        "MovieSynopsis": "Without the guidance and protection of their professors, Harry (Daniel Radcliffe), Ron (Rupert Grint) and Hermione (Emma Watson) begin a mission to destroy the Horcruxes, the sources of Voldemort's immortality. Though they must rely on one another more than ever, dark forces threaten to tear them apart. Voldemort's Death Eaters have seized control of the Ministry of Magic and Hogwarts, and they are searching for Harry -- even as he and his friends prepare for the ultimate s"
+    },
+    {
+        "MovieId": 13,
+        "MovieName": "Harry Potter and the Deathly Hallows: Part 2",
+        "MovieYear": "2011",
+        "DirectorId": 9,
+        "MovieGenre": "Fantasy",
+        "MovieRating": 8.199999809265137,
+        "MovieSynopsis": "A clash between good and evil awaits as young Harry (Daniel Radcliffe), Ron (Rupert Grint) and Hermione (Emma Watson) prepare for a final battle against Lord Voldemort (Ralph Fiennes). Harry has grown into a steely lad on a mission to rid the world of evil. The friends must search for the Horcruxes that keep the dastardly wizard immortal. Harry and Voldemort meet at Hogwarts Castle for an epic showdown where the forces of darkness may finally meet their match."
+    },
+    {
+        "MovieId": 14,
+        "MovieName": "How to Train Your Dragon",
+        "MovieYear": "2010",
+        "DirectorId": 10,
+        "MovieGenre": "Animation",
+        "MovieRating": 8.100000381469727,
+        "MovieSynopsis": "Hiccup (Donald Reignoux) is a Norse teenager from the island of Berk, where fighting dragons are a way of life. His progressive views and weird sense of humor make him a misfit, despite the fact that his father (Emmanuel Jacomy) is chief of the clan. Tossed into dragon-fighting school, he endeavors to prove himself as a true Viking. When he befriends an injured dragon he names Toothless, he has the chance to plot a new course for his people's future."
+    },
+    {
+        "MovieId": 15,
+        "MovieName": "Three Billboards Outside Ebbing Missouri",
+        "MovieYear": "2017",
+        "DirectorId": 11,
+        "MovieGenre": "Drama",
+        "MovieRating": 8.100000381469727,
+        "MovieSynopsis": "Mildred Hayes, a hard-nosed mother is seeking justice for her murdered daughter. With no arrests after seven months, Mildred puts up three roadside signs to goad Ebbing police chief into action. But the law - and especially Sam Rockwell's hot-headed deputy - don't take kindly to the provocation. And the townsfolk are on their side. But Mildred doesn't care about ruffling a few feathers. In fact, she's happy to pluck the whole bird."
+    },
+    {
+        "MovieId": 16,
+        "MovieName": "Sausage Party",
+        "MovieYear": "2016",
+        "DirectorId": 12,
+        "MovieGenre": "Animation",
+        "MovieRating": 6.099999904632568,
+        "MovieSynopsis": "Life is good for all the food items that occupy the shelves at the local supermarket. Frank (Seth Rogen) the sausage, Brenda (Kristen Wiig) the hot dog bun, Teresa Taco and Sammy Bagel Jr. (Edward Norton) can't wait to go home with a happy customer. Soon, their world comes crashing down as poor Frank learns the horrifying truth that he will eventually become a meal. After warning his pals about their similar fate, the panicked perishables devise a plan to escape from their human enemies."
+    },
+    {
+        "MovieId": 17,
+        "MovieName": "Zodiac",
+        "MovieYear": "2007",
+        "DirectorId": 13,
+        "MovieGenre": "Mystery",
+        "MovieRating": 7.699999809265137,
+        "MovieSynopsis": "In the late 1960s and 1970s, fear grips the city of San Francisco as a serial killer called Zodiac stalks its residents. Investigators (Mark Ruffalo, Anthony Edwards) and reporters (Jake Gyllenhaal, Robert Downey Jr.) become obsessed with learning the killer's identity and bringing him to justice. Meanwhile, Zodiac claims victim after victim and taunts the authorities with cryptic messages, cyphers and menacing phone calls."
+    },
+    {
+        "MovieId": 18,
+        "MovieName": "American Psycho",
+        "MovieYear": "2000",
+        "DirectorId": 14,
+        "MovieGenre": "Horror",
+        "MovieRating": 7.599999904632568,
+        "MovieSynopsis": "In New York City in 1987, a handsome, young urban professional, Patrick Bateman (Christian Bale), lives a second life as a gruesome serial killer by night. The cast is filled by the detective (Willem Dafoe), the fiance (Reese Witherspoon), the mistress (Samantha Mathis), the coworker (Jared Leto), and the secretary (Chlo Sevigny). This is a biting, wry comedy examining the elements that make a man a monster."
+    },
+    {
+        "MovieId": 19,
+        "MovieName": "Uncharted",
+        "MovieYear": "2022",
+        "DirectorId": 15,
+        "MovieGenre": "Adventure",
+        "MovieRating": 6.400000095367432,
+        "MovieSynopsis": "Treasure hunter Victor Sully Sullivan recruits street-smart Nathan Drake to help him recover a 500-year-old lost fortune amassed by explorer Ferdinand Magellan. What starts out as a heist soon becomes a globe-trotting, white-knuckle race to reach the prize before the ruthless Santiago Moncada can get his hands on it. If Sully and Nate can decipher the clues and solve one of the world's oldest mysteries, they stand to find 5 billion in treasure -- but only if they can learn to work together."
+    }
+]

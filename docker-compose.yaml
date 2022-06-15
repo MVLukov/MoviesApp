@@ -1,0 +1,35 @@
+version: "3"
+services:
+  db:
+    image: mysql:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: $db_name
+      MYSQL_USER: $db_username
+      MYSQL_PASSWORD: $db_password
+      MYSQL_ROOT_PASSWORD: $db_root_password
+    ports:
+      - 127.0.0.1:3306:3306
+    volumes:
+      - ./db:/var/lib/mysql
+    healthcheck:
+      test: mysql ${db_name} --user=${db_username} --password='${db_password}' --silent --execute "SELECT 1;"
+      interval: 30s
+      timeout: 10s
+      retries: 5   
+  web:
+    image: moviesappweb
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./https:/https/
+    environment:
+      ASPNETCORE_URLS: "https://+;http://+"
+      ASPNETCORE_HTTPS_PORT: 8001
+      ASPNETCORE_Kestrel__Certificates__Default__Password: "DevCert@123"
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/moviesappweb.pfx
+    ports:
+      - 8000:80
+      - 8001:443

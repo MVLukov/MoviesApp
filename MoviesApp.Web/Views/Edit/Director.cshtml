@@ -1,0 +1,39 @@
+@model Director
+
+@{
+    ViewData["Title"] = "Edit Director";
+    var canConnect = ViewData["canConnect"];
+    var successful = ViewData["successful"];
+    var notFound = ViewData["notFound"];
+}
+
+<div class="container">
+    @if (canConnect != null && (bool)canConnect == false)
+    {
+        <div class="alert alert-warning">Can't connect to database!</div>
+    }
+    else
+    {
+        @if (notFound != null && (bool)notFound == true)
+        {
+            <div class="alert alert-warning">Director was not found!</div>
+        }
+        else
+        {
+            @if (successful != null && (bool)successful == true)
+            {
+                <div class="alert alert-success">Director was updated succesfuly!</div>
+            }
+
+            <form asp-controller="Edit" asp-action="Director" method="post">
+                <input type="text" asp-for="DirectorId" hidden>
+                <div class="form-group mt-2">
+                    <label asp-for="DirectorName">Director's name</label>
+                    <input asp-for="DirectorName" class="form-control" placeholder="Enter director's name" />
+                    <span asp-validation-for="DirectorName" class="text-warning"></span>
+                </div>
+                <input type="submit" class="btn btn-primary mt-2" value="Update">
+            </form>
+        }
+    }
+</div>

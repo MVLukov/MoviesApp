@@ -1,0 +1,30 @@
+@model Director
+
+@{
+    ViewData["Title"] = "Add a director";
+    var canConnect = ViewData["canConnect"];
+    var successful = ViewData["successful"];
+}
+
+<div class="container">
+    @if (canConnect != null && (bool)canConnect == false)
+    {
+        <div class="alert alert-warning">Can't connect to database!</div>
+    }
+    else
+    {
+        @if (successful != null && (bool)successful == true)
+        {
+            <div class="alert alert-success">Director added succesfuly!</div>
+        }
+
+        <form asp-controller="Create" asp-action="Director" method="post">
+            <div class="form-group">
+                <label asp-for="DirectorName">Director's name:</label>
+                <input type="text" asp-for="DirectorName" class="form-control" placeholder="Enter director's name">
+                <span class="text text-warning" asp-validation-for="DirectorName"></span>
+            </div>
+            <input type="submit" value="Add" class="btn btn-primary mt-2">
+        </form>
+    }
+</div>

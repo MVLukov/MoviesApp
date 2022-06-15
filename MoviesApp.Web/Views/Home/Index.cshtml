@@ -1,0 +1,202 @@
+﻿@model List<MovieView>
+
+@{
+    ViewData["Title"] = "Home Page";
+    var canConnect = ViewData["canConnect"];
+    var notFound = ViewData["notFound"];
+    int pageCount = 0;
+    int currentPage = 0;
+    int pageNumber = 0;
+    var search = ViewContext.HttpContext.Request.Query["search"];
+    var genres = ViewContext.HttpContext.Request.Query["genres"].ToArray();
+    var orderByNameFilter = ViewContext.HttpContext.Request.Query["orderByNameFilter"];
+    var orderByRatingFilter = ViewContext.HttpContext.Request.Query["orderByRatingFilter"];
+    var orderByYearFilter = ViewContext.HttpContext.Request.Query["orderByYearFilter"];
+
+    if(ViewData["pageCount"] != null)
+    {
+        pageCount = (int)ViewData["pageCount"];
+    } 
+
+    if(ViewData["currentPage"] != null)
+    {
+        currentPage = (int)ViewData["currentPage"];
+    }
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"
+    integrity="sha512-pF+DNRwavWMukUv/LyzDyDMn8U2uvqYQdJN0Zvilr6DDo/56xPDZdDoyPDYZRSL4aOKO/FGKXTpzDyQJ8je8Qw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.min.css"
+    integrity="sha512-bkB9w//jjNUnYbUpATZQCJu2khobZXvLP5GZ8jhltg7P/dghIrTaSJ7B/zdlBUT0W/LXGZ7FfCIqNvXjWKqCYA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-2 mb-1">
+            <form asp-controller="Home" method="get" asp-action="Index">
+                <fieldset class="form-group">
+                    <label class="form-label">Filter by movie's genre</label>
+                    @foreach (var item in ViewBag.genres)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="@item.Value" checked="@item.Selected" name="genres" value="@item.Value">
+                            <label class="form-check-label" for="@item.Value">@item.Text</label>
+                        </div>
+                    }
+                </fieldset>
+                <div class="form-group">
+                    <label class="form-label mt-4">Order by movie's name</label>
+                    <select class="form-select" asp-items="ViewBag.orderByName" name="orderByNameFilter">
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label mt-4">Order by movie's rating</label>
+                    <select class="form-select" asp-items="ViewBag.orderByRating" name="orderByRatingFilter">
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label mt-4">Order by movie's year</label>
+                    <select class="form-select" asp-items="ViewBag.orderByYear" name="orderByYearFilter">
+
+                    </select>
+                </div>
+                <input type="text" name="currentPage" value="@currentPage" hidden>
+                <input type="text" name="search" value="@search" hidden>
+                <button class="btn btn-secondary mt-1" id="genresBtn" type="submit">Filter</button>
+                <a class="btn btn-primary mt-1" asp-controller="Home" asp-action="Index">Clear</a>
+            </form>
+        </div>
+        <div class="col-md-10">
+            @if (canConnect != null && (bool)canConnect == false)
+            {
+                <div class="alert alert-warning">Can't connect to database!</div>
+            }
+
+            @if (canConnect == null && notFound != null)
+            {
+                <div class="alert alert-info">There is nothing to show. <a asp-controller="Create" asp-action="Movie">Add a movie</a></div>
+            } 
+
+            @if (canConnect == null && notFound == null)
+            {
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        string tm = $"#modal{item.MovieId}";    //modal id for delete button
+                        string mid = $"modal{item.MovieId}";    //modal id
+                        string actors = string.Join(", ", item.Actors);
+                        string[] synWords = @item.MovieSynopsis.Split(" ");
+
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-header">
+                                    <h3>@item.MovieName</h3>
+                                    @if(item.Director == null){
+                                        <h6 class="card-subtitle text-muted">Director: Not specified!</h6>
+                                    } else {
+                                        <h6 class="card-subtitle text-muted">Director: <a asp-controller="Details" asp-action="Director" asp-route-id=@item.Director.DirectorId>@item.Director.DirectorName</a></h6>
+                                    }
+                                    <span class="badge bg-danger mt-1">@item.MovieGenre</span>
+                                    <span class="badge bg-info mt-1">@item.MovieYear</span>
+                                    <span class="badge bg-warning mt-1">@item.MovieRating</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5>Movie's synopsis</h5>
+                                    @if(synWords.Length > 25){
+                                        string syn = String.Join(" ", synWords.Take(25));
+                                        <p class="card-text">@syn <i><a asp-controller="Details" asp-action="Movie" asp-route-id=@item.MovieId>See more.</a></i></p>
+                                    } else {
+                                        <p class="card-text">@item.MovieSynopsis</p>
+                                    }
+
+                                    <h5>Movie's actors</h5>
+                                    @if (item.Actors.Count == 0)
+                                    {
+                                        <p>Actors are not specified!</p>
+                                    }
+                                    else
+                                    {
+                                        @if (item.Actors.Count > 3)
+                                        {
+                                            <ul>
+                                                @foreach (var actor in item.Actors.Take(3))
+                                                {
+                                                    <li><a asp-controller="Details" asp-action="Actor" asp-route-id="@actor.ActorId">@actor.ActorName</a></li>
+                                                }
+                                                <li><i><a asp-controller="Details" asp-action="Movie" asp-route-id="@item.MovieId">See more</a></i></li>
+                                            </ul>
+                                        } else {
+                                            <ul>
+                                                @foreach (var actor in item.Actors)
+                                                {
+                                                    <li><a asp-controller="Details" asp-action="Actor" asp-route-id="@actor.ActorId">@actor.ActorName</a></li>
+                                                }
+                                            </ul>
+                                        }
+                                    }
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn btn-info" asp-controller="Edit" asp-action="Movie" asp-route-id="@item.MovieId">Edit</a>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="@tm">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="@mid" tabindex="-1">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Confirm action</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Are you sure you want to delete <i>@item.MovieName.ToUpper()</i></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a type="button" class="btn btn-primary" asp-controller="Delete" asp-action="Movie" asp-route-id="@item.MovieId">Yes,
+                                        delete!</a>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, close!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="btn-group" role="group">
+                        @if (currentPage == 1)
+                        {
+                            <a role="button" class="btn btn-secondary disabled">Previous</a>
+                        } else {
+                            pageNumber = currentPage - 1;
+                            @Html.ActionLink("Previous", "Index", "Home", new {search, currentPage = pageNumber, genres, orderByNameFilter, orderByRatingFilter, orderByYearFilter}, new { @class = "btn btn-secondary"})
+                        }
+                        @Html.ActionLink("1", "Index", "Home", new {search, currentPage = 1, genres, orderByNameFilter, orderByRatingFilter, orderByYearFilter}, new { @class = "btn btn-secondary"})
+                        
+                        <a role="button" class="btn btn-primary">@currentPage</a>
+
+                        @Html.ActionLink(pageCount.ToString(), "Index", "Home", new {search, currentPage = pageCount, genres, orderByNameFilter, orderByRatingFilter, orderByYearFilter}, new { @class = "btn btn-secondary"})
+                        
+                        @if (currentPage == pageCount)
+                        {
+                            @Html.ActionLink("Next", "Index", "Home", new {search, currentPage, genres, orderByNameFilter, orderByRatingFilter, orderByYearFilter}, new { @class = "btn btn-secondary disabled"})
+                        } else {
+                            pageNumber = currentPage + 1;
+                            @Html.ActionLink("Next", "Index", "Home", new {search, currentPage = pageNumber, genres, orderByNameFilter, orderByRatingFilter, orderByYearFilter}, new { @class = "btn btn-secondary" })
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>   
+</div>
+
+<script>
+    $("#genres").selectize({
+        maxItems: 1,
+        placeholder: "Please choose a genre",
+        plugins: ["restore_on_backspace"],
+    });
+</script>

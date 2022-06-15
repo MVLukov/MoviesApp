@@ -1,0 +1,39 @@
+@model Actor
+
+@{
+    ViewData["Title"] = "Edit Actor";
+    var canConnect = ViewData["canConnect"];
+    var successful = ViewData["successful"];
+    var notFound = ViewData["notFound"];
+}
+
+<div class="container">
+    @if (canConnect != null && (bool)canConnect == false)
+    {
+        <div class="alert alert-warning">Can't connect to database!</div>
+    }
+    else
+    {
+        @if (notFound != null && (bool)notFound == true)
+        {
+            <div class="alert alert-warning">Actor was not found!</div>
+        }
+        else
+        {
+            @if (successful != null && (bool)successful == true)
+            {
+                <div class="alert alert-success">Actor was updated succesfuly!</div>
+            }
+
+            <form asp-controller="Edit" asp-action="Actor" method="post">
+                <input type="text" asp-for="ActorId" hidden>
+                <div class="form-group mt-2">
+                    <label asp-for="ActorName">Actor's name</label>
+                    <input asp-for="ActorName" class="form-control" placeholder="Enter actors's name" />
+                    <span asp-validation-for="ActorName" class="text-warning"></span>
+                </div>
+                <input type="submit" class="btn btn-primary mt-2" value="Update">
+            </form>
+        }
+    }
+</div>
