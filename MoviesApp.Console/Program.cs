@@ -31,62 +31,54 @@ namespace MoviesApp.Console
                 seed.createDb();
             }
 
+            context = serviceProvider.GetService<MoviesAppDbContext>();
+
+            ActorsController actorCtl = new ActorsController(context);
+            DirectorsCollector directorCtl = new DirectorsCollector(context);
+            MoviesController movieCtl = new MoviesController(context, actorCtl, directorCtl);
             while (true)
             {
-                context = serviceProvider.GetService<MoviesAppDbContext>();
-
-                ActorsController actorCtl = new ActorsController(context);
-                DirectorsCollector directorCtl = new DirectorsCollector(context);
-                MoviesController movieCtl = new MoviesController(context, actorCtl, directorCtl);
-
-            Begin:
                 System.Console.Write($"{Colors.cyan}Enter cmd:{Colors.grey} ");
                 string[] input = readConsole();
 
                 if (input.Length == 0)
-                {
-                    goto Begin;
-                }
+                    continue;
 
-                if (input[0] == "exit") return;
+                if (input[0] == "exit")
+                    break;
 
+                // Too lazy to actually fix it lol
                 int found = Array.FindIndex(mainCmd, x => x == input[0]);
+                if (found == -1) input[0] = "help";
 
-                if (found == -1 || input[0] == "help")
+                switch (input[0])
                 {
-                    string moviesCmds = String.Join(", ", movieCtl.cmdsList);
-                    string directorsCmds = String.Join(", ", directorCtl.cmdsList);
-                    string actorsCmd = String.Join(", ", actorCtl.cmdList);
+                    case "help": {
+                        string moviesCmds = String.Join(", ", movieCtl.cmdsList);
+                        string directorsCmds = String.Join(", ", directorCtl.cmdsList);
+                        string actorsCmd = String.Join(", ", actorCtl.cmdList);
 
-                    System.Console.WriteLine($"movie - {moviesCmds}");
-                    System.Console.WriteLine($"actor - {actorsCmd}");
-                    System.Console.WriteLine($"director - {directorsCmds}");
-                    goto Begin;
+                        System.Console.WriteLine($"movie - {moviesCmds}");
+                        System.Console.WriteLine($"actor - {actorsCmd}");
+                        System.Console.WriteLine($"director - {directorsCmds}");
+                    } break;
+                    case "movie": {
+                        input = input.Skip(1).ToArray();
+                        movieCtl.cmdMovies(input);
+                    } break;
+                    case "actor": {
+                        input = input.Skip(1).ToArray();
+                        actorCtl.cmdActors(input);
+                    } break;
+                    case "director": {
+                        input = input.Skip(1).ToArray();
+                        directorCtl.cmdDirectors(input);
+                    } break;
                 }
-
-                if (input[0] == "movie")
-                {
-                    input = input.Skip(1).ToArray();
-                    movieCtl.cmdMovies(input);
-                    goto Begin;
-                }
-
-                if (input[0] == "actor")
-                {
-                    input = input.Skip(1).ToArray();
-                    actorCtl.cmdActors(input);
-                    goto Begin;
-                }
-
-                if (input[0] == "director")
-                {
-                    input = input.Skip(1).ToArray();
-                    directorCtl.cmdDirectors(input);
-                    goto Begin;
-                }
-
-                context.Dispose();
             }
+            // This won't be called all the time. For example if the user presses Ctrl+C.
+            // We hope that either the runtime or the OS will free the memory lol.
+            context.Dispose();
         }
 
         public static string[] readConsole()
