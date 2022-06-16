@@ -56,10 +56,10 @@ namespace MoviesApp.Console
                 {
                     string moviesCmds = String.Join(", ", movieCtl.cmdsList);
                     string directorsCmds = String.Join(", ", directorCtl.cmdsList);
-                    string actorsCmds = String.Join(", ", actorCtl.cmdsList);
+                    string actorsCmd = String.Join(", ", actorCtl.cmdList);
 
                     System.Console.WriteLine($"movie - {moviesCmds}");
-                    System.Console.WriteLine($"actor - {actorsCmds}");
+                    System.Console.WriteLine($"actor - {actorsCmd}");
                     System.Console.WriteLine($"director - {directorsCmds}");
                     goto Begin;
                 }
