@@ -28,6 +28,7 @@ namespace MoviesApp.Console
             {
                 string cmds = String.Join(", ", cmdsList);  //join available commands into string
                 System.Console.WriteLine($"{Colors.green}Available commands:{Colors.grey} {cmds}");
+                return;
             }
 
             switch (cmd[0])
@@ -84,19 +85,17 @@ namespace MoviesApp.Console
             System.Console.WriteLine($"{Colors.green}ID:{Colors.grey} {actor.ActorId}");
             System.Console.WriteLine($"{Colors.green}Name:{Colors.grey} {actor.ActorName}");
 
-            if (actor.Movies.Any())
-            {
-                string[] movies = actor.Movies.Select(x => new String($"[{x.MovieId}] {x.MovieName}")).ToArray();
-
-                System.Console.WriteLine($"{Colors.green}Movies:{Colors.grey} ");
-                foreach (var item in movies)
-                {
-                    System.Console.WriteLine($"\t {item}");
-                }
-            }
-            else
+            if (!actor.Movies.Any())
             {
                 System.Console.WriteLine($"{Colors.green}Movies:{Colors.grey} This actor doesn't appear in any movie.");
+                return;
+            }
+
+            System.Console.WriteLine($"{Colors.green}Movies:{Colors.grey} ");
+            string[] movies = actor.Movies.Select(x => new String($"[{x.MovieId}] {x.MovieName}")).ToArray();
+            foreach (var item in movies)
+            {
+                System.Console.WriteLine($"\t {item}");
             }
         }
 
@@ -126,55 +125,53 @@ namespace MoviesApp.Console
                 string actorName = System.Console.ReadLine();    //get input
                 actorName = Filter.name.Replace(actorName, String.Empty);  //filter name
                 actorName = Filter.singleSpace.Replace(actorName, " ").Trim();    //filter single space; trim
-                
-                if (!String.IsNullOrEmpty(actorName))
+
+                if (String.IsNullOrEmpty(actorName))
                 {
-                    Actor setActor = new Actor();   //create new actor
-                    List<ValidationResult> errorResults = new List<ValidationResult>(); //create errors list
+                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actors's name was not specified!{Colors.grey}");
+                    return;
+                }
 
-                    Actor checkActor = _context.Actors.FirstOrDefault(x => x.ActorName.ToLower() == actorName.ToLower());   //check if actor with given name already exists
+                Actor setActor = new Actor();   //create new actor
+                List<ValidationResult> errorResults = new List<ValidationResult>(); //create errors list
 
-                    setActor.ActorName = actorName; //set actor's name
-                    
-                    if (checkActor != null) //actor not exists
+                Actor checkActor = _context.Actors.FirstOrDefault(x => x.ActorName.ToLower() == actorName.ToLower());   //check if actor with given name already exists
+
+                setActor.ActorName = actorName; //set actor's name
+
+                if (checkActor != null) //actor not exists
+                {
+                    errorResults.Add(new ValidationResult("This actor already exist!", new string[] { nameof(Actor.ActorName) }));  //set error
+                }
+
+                var validateActor = new ValidationContext(setActor, serviceProvider: null, items: null);    //validation object
+                var isValid = Validator.TryValidateObject(setActor, validateActor, errorResults, true);     //invoke validation
+
+                if (errorResults.Count != 0) //an error has occurred
+                {
+                    foreach (var item in errorResults)
                     {
-                        errorResults.Add(new ValidationResult("This actor already exist!", new string[] { nameof(Actor.ActorName) }));  //set error
+                        string property = item.MemberNames.First(); //get property name
+                        System.Console.WriteLine($"{Colors.red}Property:{Colors.grey} {property} {Colors.red}Error:{Colors.grey} {item.ErrorMessage}");
                     }
+                    return;
+                }
 
-                    var validateActor = new ValidationContext(setActor, serviceProvider: null, items: null);    //validation object
-                    var isValid = Validator.TryValidateObject(setActor, validateActor, errorResults, true);     //invoke validation
+                this.tableActorsSingle(setActor);   //print new actor
 
-                    if (errorResults.Count == 0)    //no errors
-                    {
-                        this.tableActorsSingle(setActor);   //print new actor
+                System.Console.Write($"{Colors.cyan}Are you sure you want to add this actor? (yes/y or no/n):{Colors.grey} ");
+                string confirm = System.Console.ReadLine().Trim().ToLower();    //get input; trim
+                confirm = Filter.lettersOnly.Replace(confirm, String.Empty);   //filter only letters
 
-                        System.Console.Write($"{Colors.cyan}Are you sure you want to add this actor? (yes/y or no/n):{Colors.grey} ");
-                        string confirm = System.Console.ReadLine().Trim().ToLower();    //get input; trim
-                        confirm = Filter.lettersOnly.Replace(confirm, String.Empty);   //filter only letters
-
-                        if (!String.IsNullOrEmpty(confirm) && confirm == "yes" || confirm == "y")
-                        {
-                            _context.Actors.Add(setActor);
-                            _context.SaveChanges();
-                            System.Console.WriteLine($"{Colors.green}Actor was added successfully!{Colors.grey}");
-                        }
-                        else
-                        {
-                            System.Console.WriteLine($"{Colors.red}Operation was terminated!{Colors.grey}");
-                        }
-                    }
-                    else
-                    {
-                        foreach (var item in errorResults)
-                        {
-                            string property = item.MemberNames.First(); //get property name
-                            System.Console.WriteLine($"{Colors.red}Property:{Colors.grey} {property} {Colors.red}Error:{Colors.grey} {item.ErrorMessage}");
-                        }
-                    }
+                if (!String.IsNullOrEmpty(confirm) && confirm == "yes" || confirm == "y")
+                {
+                    _context.Actors.Add(setActor);
+                    _context.SaveChanges();
+                    System.Console.WriteLine($"{Colors.green}Actor was added successfully!{Colors.grey}");
                 }
                 else
                 {
-                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actors's name was not specified!{Colors.grey}");
+                    System.Console.WriteLine($"{Colors.red}Operation was terminated!{Colors.grey}");
                 }
             }
             catch (System.Exception e)
@@ -195,38 +192,35 @@ namespace MoviesApp.Console
                 string input = System.Console.ReadLine().Trim();    //get input; trim
                 input = Filter.numbersOnly.Replace(input, String.Empty);   //filter numbers only
 
-                if (!String.IsNullOrEmpty(input))
+                if (String.IsNullOrEmpty(input))
                 {
-                    int actorId = int.Parse(input);     //parse actor id from string to int
-                    Actor getActor = _context.Actors.FirstOrDefault(x => x.ActorId == actorId);     //check if actor with given id exists
+                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor's ID was not specified!{Colors.grey}");
+                    return;
+                }
 
-                    if (getActor != null)
-                    {
-                        this.tableActorsSingle(getActor);   //print found actor
+                int actorId = int.Parse(input);     //parse actor id from string to int
+                Actor getActor = _context.Actors.FirstOrDefault(x => x.ActorId == actorId);     //check if actor with given id exists
+                if (getActor == null)
+                {
+                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor with ID: {actorId} was not found!{Colors.grey}");
+                    return;
+                }
 
-                        System.Console.Write($"{Colors.cyan}Are you sure you want to delete this actor? (yes/y or no/n):{Colors.grey} ");
-                        string confirm = System.Console.ReadLine().Trim().ToLower();    //get input; trim
-                        confirm = Filter.lettersOnly.Replace(confirm, String.Empty);   //filter letters only
+                this.tableActorsSingle(getActor);   //print found actor
 
-                        if (!String.IsNullOrEmpty(confirm) && confirm == "yes" || confirm == "y")
-                        {
-                            _context.Actors.Remove(getActor);
-                            _context.SaveChanges();
-                            System.Console.WriteLine($"{Colors.green}Actor was deleted successfully!{Colors.grey}");
-                        }
-                        else
-                        {
-                            System.Console.WriteLine($"{Colors.red}Operation was terminated!{Colors.grey}");
-                        }
-                    }
-                    else
-                    {
-                        System.Console.WriteLine($"{Colors.yellow}WARNING: Actor with ID: {actorId} was not found!{Colors.grey}");
-                    }
+                System.Console.Write($"{Colors.cyan}Are you sure you want to delete this actor? (yes/y or no/n):{Colors.grey} ");
+                string confirm = System.Console.ReadLine().Trim().ToLower();    //get input; trim
+                confirm = Filter.lettersOnly.Replace(confirm, String.Empty);   //filter letters only
+
+                if (!String.IsNullOrEmpty(confirm) && confirm == "yes" || confirm == "y")
+                {
+                    _context.Actors.Remove(getActor);
+                    _context.SaveChanges();
+                    System.Console.WriteLine($"{Colors.green}Actor was deleted successfully!{Colors.grey}");
                 }
                 else
                 {
-                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor's ID was not specified!{Colors.grey}");
+                    System.Console.WriteLine($"{Colors.red}Operation was terminated!{Colors.grey}");
                 }
             }
             catch (System.Exception e)
@@ -247,78 +241,73 @@ namespace MoviesApp.Console
                 string input = System.Console.ReadLine().Trim();    //get input; trim
                 input = Filter.numbersOnly.Replace(input, String.Empty);   //filter numbers only
 
-                if (!String.IsNullOrEmpty(input))
+                if (String.IsNullOrEmpty(input))
                 {
-                    int actorId = int.Parse(input);     //parse actor's id from string to int
-                    Actor getActor = _context.Actors.FirstOrDefault(x => x.ActorId == actorId);     //check if actor with given id exists
+                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor's ID was not specified!{Colors.grey}");
+                    return;
+                }
 
-                    if (getActor != null)
-                    {
-                        this.tableActorsSingle(getActor);   //print found record
+                int actorId = int.Parse(input);     //parse actor's id from string to int
+                Actor getActor = _context.Actors.FirstOrDefault(x => x.ActorId == actorId);     //check if actor with given id exists
+                if (getActor == null)
+                {
+                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor with ID: {actorId} was not found!{Colors.grey}");
+                    return;
+                }
 
-                        System.Console.Write($"{Colors.magenta}Enter new actor's name:{Colors.grey} ");
-                        string actorName = System.Console.ReadLine();    //get input
-                        actorName = Filter.name.Replace(actorName, String.Empty);      //filter name
-                        actorName = Filter.singleSpace.Replace(actorName, " ").Trim();        //filter white spaces; trim
+                this.tableActorsSingle(getActor);   //print found record
 
-                        if (!String.IsNullOrEmpty(actorName))
-                        {
-                            Actor checkActor = _context.Actors.FirstOrDefault(x => x.ActorName.ToLower() == actorName.ToLower() && x.ActorId != actorId);   //check if actor with given name exists otherwise returns null
-                            List<ValidationResult> errorResults = new List<ValidationResult>(); //errors list
+                System.Console.Write($"{Colors.magenta}Enter new actor's name:{Colors.grey} ");
+                string actorName = System.Console.ReadLine();    //get input
+                actorName = Filter.name.Replace(actorName, String.Empty);      //filter name
+                actorName = Filter.singleSpace.Replace(actorName, " ").Trim();        //filter white spaces; trim
 
-                            if (checkActor == null)
-                            {
-                                getActor.ActorName = actorName;     //set new actor's name
-                            }
-                            else
-                            {
-                                errorResults.Add(new ValidationResult("This actor already exists!", new string[] { nameof(Actor.ActorName) })); //set error
-                            }
+                if (String.IsNullOrEmpty(actorName))
+                {
+                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor's name was not specified!{Colors.grey}");
+                    return;
+                }
 
-                            var validateActor = new ValidationContext(getActor, serviceProvider: null, items: null);    //validation object
-                            var isValid = Validator.TryValidateObject(getActor, validateActor, errorResults, true);     //invoke validation
+                Actor checkActor = _context.Actors.FirstOrDefault(x => x.ActorName.ToLower() == actorName.ToLower() && x.ActorId != actorId);   //check if actor with given name exists otherwise returns null
+                List<ValidationResult> errorResults = new List<ValidationResult>(); //errors list
 
-                            if (errorResults.Count == 0)    //no errors
-                            {
-                                this.tableActorsSingle(getActor);   //print selected actor with updated value
-
-                                System.Console.Write($"{Colors.cyan}Are you sure you want to update this actor? (yes/y or no/n):{Colors.grey} ");
-                                string confirm = System.Console.ReadLine().Trim().ToLower();    //get input; trim
-                                confirm = Filter.lettersOnly.Replace(confirm, String.Empty);   //filter letters
-
-                                if (!String.IsNullOrEmpty(confirm) && confirm == "yes" || confirm == "y")
-                                {
-                                    _context.Actors.Update(getActor);
-                                    _context.SaveChanges();
-                                    System.Console.WriteLine($"{Colors.green}Actor was updated successfully!{Colors.grey}");
-                                }
-                                else
-                                {
-                                    System.Console.WriteLine($"{Colors.red}Operation was terminated!{Colors.grey}");
-                                }
-                            }
-                            else
-                            {
-                                foreach (var item in errorResults)
-                                {
-                                    string property = item.MemberNames.First(); //get property name
-                                    System.Console.WriteLine($"{Colors.red}Property:{Colors.grey} {property} {Colors.red}Error:{Colors.grey} {item.ErrorMessage}");
-                                }
-                            }
-                        }
-                        else
-                        {
-                            System.Console.WriteLine($"{Colors.yellow}WARNING: Actor's name was not specified!{Colors.grey}");
-                        }
-                    }
-                    else
-                    {
-                        System.Console.WriteLine($"{Colors.yellow}WARNING: Actor with ID: {actorId} was not found!{Colors.grey}");
-                    }
+                if (checkActor == null)
+                {
+                    getActor.ActorName = actorName;     //set new actor's name
                 }
                 else
                 {
-                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor's ID was not specified!{Colors.grey}");
+                    errorResults.Add(new ValidationResult("This actor already exists!", new string[] { nameof(Actor.ActorName) })); //set error
+                }
+
+                var validateActor = new ValidationContext(getActor, serviceProvider: null, items: null);    //validation object
+                var isValid = Validator.TryValidateObject(getActor, validateActor, errorResults, true);     //invoke validation
+
+                if (errorResults.Count != 0) //an error has occurred
+                {
+                    foreach (var item in errorResults)
+                    {
+                        string property = item.MemberNames.First(); //get property name
+                        System.Console.WriteLine($"{Colors.red}Property:{Colors.grey} {property} {Colors.red}Error:{Colors.grey} {item.ErrorMessage}");
+                    }
+                    return;
+                }
+
+                this.tableActorsSingle(getActor);   //print selected actor with updated value
+
+                System.Console.Write($"{Colors.cyan}Are you sure you want to update this actor? (yes/y or no/n):{Colors.grey} ");
+                string confirm = System.Console.ReadLine().Trim().ToLower();    //get input; trim
+                confirm = Filter.lettersOnly.Replace(confirm, String.Empty);   //filter letters
+
+                if (!String.IsNullOrEmpty(confirm) && confirm == "yes" || confirm == "y")
+                {
+                    _context.Actors.Update(getActor);
+                    _context.SaveChanges();
+                    System.Console.WriteLine($"{Colors.green}Actor was updated successfully!{Colors.grey}");
+                }
+                else
+                {
+                    System.Console.WriteLine($"{Colors.red}Operation was terminated!{Colors.grey}");
                 }
             }
             catch (System.Exception e)
@@ -339,25 +328,20 @@ namespace MoviesApp.Console
                 string input = System.Console.ReadLine();
                 input = Filter.numbersOnly.Replace(input, String.Empty);
 
-                if (!String.IsNullOrEmpty(input))
-                {
-                    int actorId = int.Parse(input);
-
-                    Actor getActor = _context.Actors.Include(x => x.Movies).AsNoTracking().FirstOrDefault(x => x.ActorId == actorId);
-
-                    if (getActor != null)
-                    {
-                        this.printInfo(getActor);
-                    }
-                    else
-                    {
-                        System.Console.WriteLine($"{Colors.yellow}WARNING: Actor with ID: {actorId} was not found!{Colors.grey}");
-                    }
-                }
-                else
+                if (String.IsNullOrEmpty(input))
                 {
                     System.Console.WriteLine($"{Colors.yellow}WARNING: Actor's ID was not specified!{Colors.grey}");
+                    return;
                 }
+
+                int actorId = int.Parse(input);
+                Actor getActor = _context.Actors.Include(x => x.Movies).AsNoTracking().FirstOrDefault(x => x.ActorId == actorId);
+                if (getActor == null)
+                {
+                    System.Console.WriteLine($"{Colors.yellow}WARNING: Actor with ID: {actorId} was not found!{Colors.grey}");
+                    return;
+                }
+                this.printInfo(getActor);
             }
             catch (System.Exception e)
             {
