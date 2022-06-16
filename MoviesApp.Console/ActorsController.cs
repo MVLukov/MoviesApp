@@ -1,7 +1,7 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using MoviesApp.Data;
 using ConsoleTables;
-using System.ComponentModel.DataAnnotations;
 
 namespace MoviesApp.Console
 {
@@ -17,44 +17,38 @@ namespace MoviesApp.Console
 
         public void cmdActors(string[] cmd)
         {
-            if (cmd.Length >= 1) //if cmd includes sum commands
-            {
-                int found = Array.FindIndex(cmdsList, x => x == cmd[0]);    //check if cmd exists
-
-                if (found == -1 || cmd[0] == "help") //if cmd is help opr sub cmd was not found
-                {
-                    string cmds = String.Join(", ", cmdsList);  //join available commands into string
-                    System.Console.WriteLine($"{Colors.green}Available commands:{Colors.grey} {cmds}");
-                }
-
-                if (cmd[0] == "ls")
-                {
-                    this.printActors(); //print all actors
-                }
-
-                if (cmd[0] == "add")
-                {
-                    this.addActor();    //add new actor
-                }
-
-                if (cmd[0] == "remove" || cmd[0] == "delete")
-                {
-                    this.deleteActor(); //remove actor
-                }
-
-                if (cmd[0] == "edit" || cmd[0] == "update")
-                {
-                    this.editActor();   //edit actor
-                }
-
-                if (cmd[0] == "info")
-                {
-                    this.infoActor();
-                }
-            }
-            else
+            if (cmd.Length == 0)
             {
                 System.Console.WriteLine($"Sub commands were not specified!");
+                return;
+            }
+
+            int found = Array.FindIndex(cmdsList, x => x == cmd[0]);    //check if cmd exists
+            if (found == -1 || cmd[0] == "help") //if cmd is help opr sub cmd was not found
+            {
+                string cmds = String.Join(", ", cmdsList);  //join available commands into string
+                System.Console.WriteLine($"{Colors.green}Available commands:{Colors.grey} {cmds}");
+            }
+
+            switch (cmd[0])
+            {
+                case "ls": {
+                    this.printActors();
+                } break;
+                case "add": {
+                    this.addActor();
+                } break;
+                case "remove":
+                case "delete": {
+                    this.deleteActor();
+                } break;
+                case "edit":
+                case "update": {
+                    this.editActor();
+                } break;
+                case "info": {
+                    this.infoActor();
+                } break;
             }
         }
 
